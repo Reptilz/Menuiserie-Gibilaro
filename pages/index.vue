@@ -12,10 +12,10 @@ useHead({
             <img src="~/assets/img/waiting.gif" alt="Image de construction" class="img-construct max-w-md mx-auto"/>
         </div>
 
-        <!-- <audio controls autoplay loop class="music">
+        <audio controls autoplay loop class="music">
                 <source src="~/assets/audio/DjadjaDinaz.mp4" type="audio/mp4">
                 Votre navigateur ne supporte pas l'élément audio.
-        </audio> -->
+        </audio>
     </div>
 </template>
 
