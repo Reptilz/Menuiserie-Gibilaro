@@ -7,17 +7,10 @@ useHead({
 <template>
     <div class="bg-black min-h-screen flex flex-col items-center justify-center p-4">
       <div class="text-center">
-        <h1 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 mx-8">Site en construction</h1>
-        <p class="text-yellow text-base sm:text-xl md:text-xl lg:text-2xl mx-12">Nous sommes en train de peaufiner les détails. Revenez bientôt pour découvrir notre nouveau site !</p>
+        <h1 class="text-white text-3xl sm:text-xl md:text-5xl lg:text-6xl font-bold mb-4 mx-0">Site en construction</h1>
+        <p class="text-yellow text-base sm:text-l md:text-xl lg:text-2xl mx-0">Nous sommes en train de peaufiner les détails. Revenez bientôt pour découvrir notre nouveau site !</p>
         <img src="~/assets/img/waiting.gif" alt="Image de construction" class="img-construct max-w-md mx-auto mt-4"/>
       </div>
-  
-      <!-- <audio controls autoplay loop class="music">
-            <source src="~/assets/audio/DjadjaDinaz.mp4" type="audio/mp4">
-            Votre navigateur ne supporte pas l'élément audio.
-      </audio> -->
-      
-
 
 <footer
   class="flex flex-col items-center bg-neutral-200 text-center text-white dark:bg-neutral-600 footer">
@@ -46,7 +39,7 @@ useHead({
             clip-rule="evenodd" />
         </svg>
       </a>
-      <a href="#!" class="mr-9 text-neutral-800 dark:text-neutral-200">
+      <a href="https://www.instagram.com/menuiserie.gibilaro/?fbclid=IwAR2c-OBO3IdQJyLXHll6G5lojgoLCMenlq4jaOxaDo2EsnwBhl-7FiVChFw" class="mr-9 text-neutral-800 dark:text-neutral-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-4 w-4"
