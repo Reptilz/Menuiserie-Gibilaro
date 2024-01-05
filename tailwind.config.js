@@ -10,6 +10,11 @@ export default {
   ],
   theme: {
     extend: {},
+    colors: {
+      'white': '#ffffff',
+      'black': '#10100F',
+      'yellow': '#D5C86E',
+    },
   },
   plugins: [],
 }

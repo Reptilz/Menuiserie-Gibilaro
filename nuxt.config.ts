@@ -12,5 +12,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  devtools: { enabled: true }
+  devtools: { enabled: true },
 })
