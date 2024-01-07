@@ -14,7 +14,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="h-screen bg-black text-white">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
