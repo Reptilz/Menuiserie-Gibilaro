@@ -59,7 +59,7 @@
           </div>
 
           <div class="flex flex-col items-center">
-            <a href="#" class="mx-auto"><img src="~/assets/img/logo/Transparent-Logo.png" /></a>
+            <a href="#" class="mx-auto w-64"><img src="~/assets/img/logo/Transparent-Logo.png" /></a>
             <a href="#" class="text-white text-xl p-3 hover:text-gray-300">Accueil</a>
             <a href="#" class="text-white text-xl p-3 hover:text-gray-300">À propos</a>
             <a href="#" class="text-white text-xl p-3 hover:text-gray-300">Nos réalisations</a>
