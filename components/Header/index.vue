@@ -1,7 +1,5 @@
 <template>
     <header>
-        <div>
-            <HeaderNav />
-        </div>
+        <HeaderNav />
     </header>
 </template>

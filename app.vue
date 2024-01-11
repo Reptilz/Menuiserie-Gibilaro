@@ -10,7 +10,6 @@ useHead({
     { name: 'og:title', content: 'Menuiserie Gibilaro - Créations sur mesure pour votre espace de vie' },
     { name: 'og:description', content: "Artisan menuisier passionné, spécialisé dans la conception et l'installation de meubles, portes, fenêtres et agencements intérieurs. Qualité, durabilité et design au cœur de notre engagement." },
   ],
-  link: [{ rel: 'icon', type: 'image/png', href: '/favicon.ico' }]
 })
 </script>
 
