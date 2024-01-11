@@ -23,7 +23,6 @@
           v-show="mobileMenuOpen"
           :class="{ 'mobile-menu-open': mobileMenuOpen }"
           class="bg-black lg:hidden absolute inset-0 bg-gray-800 bg-opacity-100 z-50 origin-right"
-          style="max-height: 100vh;"
         >
           <div class="flex justify-end pr-8 pt-8">
             <button
@@ -79,11 +78,8 @@
               <span>Contact</span>
               <i class="fa-solid fa-chevron-right"></i>
             </a>
-            <span class="text-white text-xl p-3 hover:text-gray-300">
-              <i class="fas fa-phone-alt text-white mr-2"></i>
-              <a href="tel:+32498800504">+32 498 80 05 04</a>
-            </span>
           </div>
+          <HeaderNavFooterMobileMenu />
         </div>
 
         <!-- Regular Menu for Desktop - Hidden on Mobile -->
@@ -120,6 +116,9 @@ const toggleMobileMenu = () => {
 </script>
 
 <style scoped>
+.mobile-menu-open {
+  max-height: 100vh;
+}
 .menu-hamburger-logo {
   font-size: 2rem;
   margin-bottom: 15px;
