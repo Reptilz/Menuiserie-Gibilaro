@@ -14,7 +14,7 @@
             @click="toggleMobileMenu"
             class="text-white focus:outline-none mr-8"
           >
-          <i class="fa-solid fa-bars menu-hamburger-logo text-3xl"></i>
+            <i class="fa-solid fa-bars menu-hamburger-logo text-3xl"></i>
           </button>
         </div>
 
@@ -22,7 +22,7 @@
         <div
           v-show="mobileMenuOpen"
           :class="{ 'mobile-menu-open': mobileMenuOpen }"
-          class="bg-black lg:hidden fixed inset-0 bg-gray-800 bg-opacity-97 z-50 transition-transform transform origin-right"
+          class="bg-black lg:hidden fixed inset-0 bg-gray-800 bg-opacity-100 z-50 transition-transform transform origin-right"
         >
           <div class="flex justify-end pr-8 pt-8">
             <button
@@ -46,12 +46,38 @@
             </button>
           </div>
 
-          <div class="flex flex-col items-center">
-            <a href="#" class="mx-auto w-64"><img src="~/assets/img/logo/Transparent-Logo.png" /></a>
-            <a href="#" class="text-white text-xl p-3 hover:text-gray-300">Accueil</a>
-            <a href="#" class="text-white text-xl p-3 hover:text-gray-300">À propos</a>
-            <a href="#" class="text-white text-xl p-3 hover:text-gray-300">Nos réalisations</a>
-            <a href="#" class="text-white text-xl p-3 hover:text-gray-300">Contact</a>
+          <div class="flex flex-col">
+            <a href="#" class="mx-auto w-64"
+              ><img src="~/assets/img/logo/Transparent-Logo.png"
+            /></a>
+            <a
+              href="#"
+              class="text-white bg-gray bg-opacity-80 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
+            >
+              <span>Accueil</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white bg-gray bg-opacity-80 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
+            >
+              <span>À propos</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white bg-gray bg-opacity-80 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
+            >
+              <span>Nos réalisations</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a
+              href="#"
+              class="text-white bg-gray bg-opacity-80 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
+            >
+              <span>Contact</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
             <span class="text-white text-xl p-3 hover:text-gray-300">
               <i class="fas fa-phone-alt text-white mr-2"></i>
               <a href="tel:+32498800504">+32 498 80 05 04</a>
