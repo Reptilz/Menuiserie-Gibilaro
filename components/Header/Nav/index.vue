@@ -11,10 +11,10 @@
         <div v-if="!mobileMenuOpen" class="lg:hidden">
           <button
             @click="toggleMobileMenu"
-            class="text-white focus:outline-none"
+            class="text-white focus:outline-none mr-8"
           >
             <svg
-              class="lg:hidden h-6 w-6"
+              class="lg:hidden h-10 w-10"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -36,13 +36,13 @@
           :class="{ 'mobile-menu-open': mobileMenuOpen }"
           class="bg-black lg:hidden fixed inset-0 bg-gray-800 bg-opacity-95 z-50 transition-transform transform origin-right"
         >
-          <div class="flex justify-end pr-4 pb-0">
+          <div class="flex justify-end pr-8 pt-8">
             <button
               @click="toggleMobileMenu"
               class="text-white focus:outline-none"
             >
               <svg
-                class="h-8 w-8"
+                class="h-10 w-10"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
