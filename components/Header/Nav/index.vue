@@ -52,28 +52,28 @@
             /></a>
             <a
               href="#"
-              class="text-white bg-gray bg-opacity-80 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
             >
               <span>Accueil</span>
               <i class="fa-solid fa-chevron-right"></i>
             </a>
             <a
               href="#"
-              class="text-white bg-gray bg-opacity-80 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
             >
               <span>À propos</span>
               <i class="fa-solid fa-chevron-right"></i>
             </a>
             <a
               href="#"
-              class="text-white bg-gray bg-opacity-80 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
             >
               <span>Nos réalisations</span>
               <i class="fa-solid fa-chevron-right"></i>
             </a>
             <a
               href="#"
-              class="text-white bg-gray bg-opacity-80 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
             >
               <span>Contact</span>
               <i class="fa-solid fa-chevron-right"></i>
