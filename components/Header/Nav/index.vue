@@ -22,7 +22,8 @@
         <div
           v-show="mobileMenuOpen"
           :class="{ 'mobile-menu-open': mobileMenuOpen }"
-          class="bg-black lg:hidden fixed inset-0 bg-gray-800 bg-opacity-100 z-50 transition-transform transform origin-right"
+          class="bg-black lg:hidden absolute inset-0 bg-gray-800 bg-opacity-100 z-50 origin-right"
+          style="max-height: 100vh;"
         >
           <div class="flex justify-end pr-8 pt-8">
             <button
