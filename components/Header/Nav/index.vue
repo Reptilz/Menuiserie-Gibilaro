@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gray-800 p-0 border-b-2 border-yellow">
+  <nav class="bg-black p-0 border-b-2 border-yellow">
     <div class="container mx-auto">
       <div class="flex items-center justify-between">
         <img
@@ -33,7 +33,7 @@
         <!-- Mobile Menu -->
         <div
           v-show="mobileMenuOpen"
-          class="md:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50"
+          class="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50"
         >
           <div class="flex justify-end p-4">
             <button
