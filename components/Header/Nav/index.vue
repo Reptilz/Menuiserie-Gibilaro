@@ -83,22 +83,22 @@
         </div>
 
         <!-- Regular Menu for Desktop - Hidden on Mobile -->
-        <div class="hidden lg:flex lg:flex-grow justify-center space-x-12">
-          <a href="#" class="text-white text-xl hover:text-gray-300">Accueil</a>
-          <a href="#" class="text-white text-xl hover:text-gray-300"
+        <div class="hidden lg:flex lg:flex-grow justify-center xl:text-xl space-x-12">
+          <a href="#" class="text-white hover:text-gray-300">Accueil</a>
+          <a href="#" class="text-white hover:text-gray-300"
             >À propos</a
           >
-          <a href="#" class="text-white text-xl hover:text-gray-300"
+          <a href="#" class="text-white hover:text-gray-300"
             >Nos réalisations</a
           >
-          <a href="#" class="text-white text-xl hover:text-gray-300">Contact</a>
+          <a href="#" class="text-white hover:text-gray-300">Contact</a>
         </div>
 
         <!-- Phone zone - Hidden on Mobile -->
-        <div class="hidden lg:flex items-center space-x-2 text-xl">
+        <div class="hidden lg:flex items-center space-x-2 xl:text-xl">
           <i class="fas fa-phone-alt text-white"></i>
           <a href="tel:+32498800504" class="text-white">+32 498 80 05 04</a>
-          <span class="text-xs text-gray-300">(Appelez-nous)</span>
+          <span class="text-xs text-gray-300 pr-12 xl:pr-0">(Appelez-nous)</span>
         </div>
       </div>
     </div>
