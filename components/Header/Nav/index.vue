@@ -3,8 +3,9 @@
     <div class="container mx-auto">
       <div class="flex items-center justify-between">
         <img
-          src="~/assets/img/logo/logo-nav.png"
+          src="~/assets/img/logo/Transparent-Logo.png"
           alt="Menuiserie Gibilaro logo"
+          class="w-56"
         />
 
         <!-- Burger Menu for Mobile -->
