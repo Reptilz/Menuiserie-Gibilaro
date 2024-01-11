@@ -8,13 +8,13 @@
         />
 
         <!-- Burger Menu for Mobile -->
-        <div class="lg:hidden">
+        <div v-if="!mobileMenuOpen" class="lg:hidden">
           <button
             @click="toggleMobileMenu"
             class="text-white focus:outline-none"
           >
             <svg
-              class="h-6 w-6"
+              class="lg:hidden h-6 w-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -33,15 +33,16 @@
         <!-- Mobile Menu -->
         <div
           v-show="mobileMenuOpen"
-          class="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50"
+          :class="{ 'mobile-menu-open': mobileMenuOpen }"
+          class="bg-black lg:hidden fixed inset-0 bg-gray-800 bg-opacity-95 z-50 transition-transform transform origin-right"
         >
-          <div class="flex justify-end p-4">
+          <div class="flex justify-end pr-4 pb-0">
             <button
               @click="toggleMobileMenu"
               class="text-white focus:outline-none"
             >
               <svg
-                class="h-6 w-6"
+                class="h-8 w-8"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -58,10 +59,15 @@
           </div>
 
           <div class="flex flex-col items-center">
-            <a href="#" class="text-white p-4 hover:text-gray-300">Accueil</a>
-            <a href="#" class="text-white p-4 hover:text-gray-300">À propos</a>
-            <a href="#" class="text-white p-4 hover:text-gray-300">Nos réalisations</a>
-            <a href="#" class="text-white p-4 hover:text-gray-300">Contact</a>
+            <a href="#" class="mx-auto"><img src="~/assets/img/logo/Transparent-Logo.png" /></a>
+            <a href="#" class="text-white p-3 hover:text-gray-300">Accueil</a>
+            <a href="#" class="text-white p-3 hover:text-gray-300">À propos</a>
+            <a href="#" class="text-white p-3 hover:text-gray-300">Nos réalisations</a>
+            <a href="#" class="text-white p-3 hover:text-gray-300">Contact</a>
+            <span class="text-white p-3 hover:text-gray-300">
+              <i class="fas fa-phone-alt text-white mr-2"></i>
+              <a href="tel:+32498800504">+32 498 80 05 04</a>
+            </span>
           </div>
         </div>
 
@@ -99,5 +105,4 @@ const toggleMobileMenu = () => {
 </script>
 
 <style scoped>
-/* Add your additional styles here */
 </style>

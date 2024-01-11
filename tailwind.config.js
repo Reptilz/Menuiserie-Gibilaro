@@ -13,7 +13,7 @@ export default {
     colors: {
       'white': '#ffffff',
       'black': '#10100F',
-      'yellow': '#D5C86E',
+      'yellow': '#caa673',
     },
   },
   plugins: [],
