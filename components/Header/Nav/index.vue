@@ -34,7 +34,7 @@
         <div
           v-show="mobileMenuOpen"
           :class="{ 'mobile-menu-open': mobileMenuOpen }"
-          class="bg-black lg:hidden fixed inset-0 bg-gray-800 bg-opacity-95 z-50 transition-transform transform origin-right"
+          class="bg-black lg:hidden fixed inset-0 bg-gray-800 bg-opacity-97 z-50 transition-transform transform origin-right"
         >
           <div class="flex justify-end pr-8 pt-8">
             <button
@@ -60,11 +60,11 @@
 
           <div class="flex flex-col items-center">
             <a href="#" class="mx-auto"><img src="~/assets/img/logo/Transparent-Logo.png" /></a>
-            <a href="#" class="text-white p-3 hover:text-gray-300">Accueil</a>
-            <a href="#" class="text-white p-3 hover:text-gray-300">À propos</a>
-            <a href="#" class="text-white p-3 hover:text-gray-300">Nos réalisations</a>
-            <a href="#" class="text-white p-3 hover:text-gray-300">Contact</a>
-            <span class="text-white p-3 hover:text-gray-300">
+            <a href="#" class="text-white text-xl p-3 hover:text-gray-300">Accueil</a>
+            <a href="#" class="text-white text-xl p-3 hover:text-gray-300">À propos</a>
+            <a href="#" class="text-white text-xl p-3 hover:text-gray-300">Nos réalisations</a>
+            <a href="#" class="text-white text-xl p-3 hover:text-gray-300">Contact</a>
+            <span class="text-white text-xl p-3 hover:text-gray-300">
               <i class="fas fa-phone-alt text-white mr-2"></i>
               <a href="tel:+32498800504">+32 498 80 05 04</a>
             </span>
