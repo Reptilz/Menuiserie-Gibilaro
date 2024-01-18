@@ -1,5 +1,5 @@
 <template>
-    <div class="defaultLayout">
+    <div class="defaultLayout flex flex-col min-h-screen">
         <Header />
         <slot />
         <Footer />

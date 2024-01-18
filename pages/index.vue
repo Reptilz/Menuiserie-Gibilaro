@@ -6,7 +6,7 @@ useHead({
 
 
 <template>
-    <div class="bg-black flex flex-col items-center justify-center mb-96">
+    <div class="bg-black flex flex-col items-center justify-center">
         <div class="text-center">
             <h1 class="text-white text-4xl font-bold mb-4 mt-24 mx-4">Page en construction</h1>
             <p class="text-yellow text-xl">Accueil</p>
