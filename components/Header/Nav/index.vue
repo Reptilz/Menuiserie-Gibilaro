@@ -47,58 +47,70 @@
           </div>
 
           <div class="flex flex-col">
-            <a href="#" class="mx-auto w-64"
-              ><img src="~/assets/img/logo/Transparent-Logo.png"
-            /></a>
-            <a
-              href="#"
+            <NuxtLink to="/" @click="toggleMobileMenu"  class="mx-auto w-64">
+              <img src="~/assets/img/logo/Transparent-Logo.png" />
+            </NuxtLink>
+            <NuxtLink
+              to="/"
+              @click="toggleMobileMenu" 
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
             >
-              <span>Accueil</span>
+              Accueil
               <i class="fa-solid fa-chevron-right"></i>
-            </a>
-            <a
-              href="#"
+            </NuxtLink>
+            <NuxtLink
+              to="/a-propos"
+              @click="toggleMobileMenu" 
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
             >
-              <span>À propos</span>
+              À propos
               <i class="fa-solid fa-chevron-right"></i>
-            </a>
-            <a
-              href="#"
+            </NuxtLink>
+            <NuxtLink
+              to="/realisations"
+              @click="toggleMobileMenu" 
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
             >
-              <span>Nos réalisations</span>
+              Nos réalisations
               <i class="fa-solid fa-chevron-right"></i>
-            </a>
-            <a
-              href="#"
+            </NuxtLink>
+            <NuxtLink
+              to="/contact"
+              @click="toggleMobileMenu" 
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center"
             >
-              <span>Contact</span>
+              Contact
               <i class="fa-solid fa-chevron-right"></i>
-            </a>
+            </NuxtLink>
           </div>
           <HeaderNavFooterMobileMenu />
         </div>
 
         <!-- Regular Menu for Desktop - Hidden on Mobile -->
-        <div class="hidden lg:flex lg:flex-grow justify-center xl:text-xl space-x-12">
-          <a href="#" class="text-white hover:text-gray-300">Accueil</a>
-          <a href="#" class="text-white hover:text-gray-300"
-            >À propos</a
-          >
-          <a href="#" class="text-white hover:text-gray-300"
-            >Nos réalisations</a
-          >
-          <a href="#" class="text-white hover:text-gray-300">Contact</a>
+        <div
+          class="hidden lg:flex lg:flex-grow justify-center xl:text-xl space-x-12"
+        >
+          <NuxtLink to="/" class="text-white hover:text-gray-300">
+            Accueil
+          </NuxtLink>
+          <NuxtLink to="/a-propos" class="text-white hover:text-gray-300">
+            À propos
+          </NuxtLink>
+          <NuxtLink to="/realisations" class="text-white hover:text-gray-300">
+            Nos réalisations
+          </NuxtLink>
+          <NuxtLink to="/contact" class="text-white hover:text-gray-300">
+            Contact
+          </NuxtLink>
         </div>
 
         <!-- Phone zone - Hidden on Mobile -->
         <div class="hidden lg:flex items-center space-x-2 xl:text-xl">
           <i class="fas fa-phone-alt text-white"></i>
           <a href="tel:+32498800504" class="text-white">+32 498 80 05 04</a>
-          <span class="text-xs text-gray-300 pr-12 xl:pr-0">(Appelez-nous)</span>
+          <span class="text-xs text-gray-300 pr-12 xl:pr-0"
+            >(Appelez-nous)</span
+          >
         </div>
       </div>
     </div>
@@ -110,6 +122,7 @@ import { ref } from "vue";
 
 const mobileMenuOpen = ref(false);
 
+//Close the mobile menu
 const toggleMobileMenu = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value;
 };
