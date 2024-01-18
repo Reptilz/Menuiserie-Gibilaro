@@ -24,7 +24,7 @@ slot {
   }
 
   slot {
-    margin-bottom: 200px;  
+    margin-bottom: 500px;  
   }
 }
 </style>
