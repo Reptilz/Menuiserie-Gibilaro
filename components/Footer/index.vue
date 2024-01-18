@@ -107,10 +107,4 @@
 </template>
 
 <style lang="scss">
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
 </style>

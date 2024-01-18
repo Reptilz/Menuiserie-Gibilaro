@@ -15,9 +15,4 @@ useHead({
     </div>
 </template>
 
-<style lang="scss">
-.img-construct {
-    position: relative;
-    bottom: 80px;
-}
-</style>
+
