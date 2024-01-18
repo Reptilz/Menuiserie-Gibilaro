@@ -17,7 +17,7 @@
             </NuxtLink>
           </div>
           <div class="px-5 py-2">
-            <NuxtLink to="a-propos" class="text-base leading-6 text-gray-500 hover:font-semibold">
+            <NuxtLink to="contact" class="text-base leading-6 text-gray-500 hover:font-semibold">
               Contactez-nous
             </NuxtLink>
           </div>
