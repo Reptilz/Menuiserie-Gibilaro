@@ -7,36 +7,24 @@
       >
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
           <div class="px-5 py-2">
-            <a
-              href="#"
-              class="text-base leading-6 text-gray-500 hover:font-semibold"
-            >
+            <NuxtLink to="a-propos" class="text-base leading-6 text-gray-500 hover:font-semibold">
               À propos de nous
-            </a>
+            </NuxtLink>
           </div>
           <div class="px-5 py-2">
-            <a
-              href="#"
-              class="text-base leading-6 text-gray-500 hover:font-semibold"
-            >
-              Contact
-            </a>
-          </div>
-          <div class="px-5 py-2">
-            <a
-              href="#"
-              class="text-base leading-6 text-gray-500 hover:font-semibold"
-            >
+            <NuxtLink to="realisations" class="text-base leading-6 text-gray-500 hover:font-semibold">
               Nos réalisations
-            </a>
+            </NuxtLink>
           </div>
           <div class="px-5 py-2">
-            <a
-              href="#"
-              class="text-base leading-6 text-gray-500 hover:font-semibold"
-            >
+            <NuxtLink to="a-propos" class="text-base leading-6 text-gray-500 hover:font-semibold">
+              Contactez-nous
+            </NuxtLink>
+          </div>
+          <div class="px-5 py-2">
+            <NuxtLink to="/" class="text-base leading-6 text-gray-500 hover:font-semibold">
               Termes et conditions d'utilisation
-            </a>
+            </NuxtLink>
           </div>
         </nav>
         <div class="flex justify-center mt-8 space-x-6">
