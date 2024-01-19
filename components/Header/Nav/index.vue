@@ -33,8 +33,8 @@
             <NuxtLink to="/" @click="toggleMobileMenu"
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
               :class="[
-                 $route.path === '/'
-                 ? 'bg-yellow text-black' : ''
+                $route.path === '/'
+                  ? 'bg-yellow text-black' : ''
               ]">
               Accueil
               <i class="fa-solid fa-chevron-right"></i>
@@ -42,8 +42,8 @@
             <NuxtLink to="/realisations" @click="toggleMobileMenu"
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
               :class="[
-                 $route.path === '/realisations'
-                 ? 'bg-yellow text-black' : ''
+                $route.path === '/realisations'
+                  ? 'bg-yellow text-black' : ''
               ]">
               Nos réalisations
               <i class="fa-solid fa-chevron-right"></i>
@@ -51,8 +51,8 @@
             <NuxtLink to="/a-propos" @click="toggleMobileMenu"
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
               :class="[
-                 $route.path === '/a-propos'
-                 ? 'bg-yellow text-black' : ''
+                $route.path === '/a-propos'
+                  ? 'bg-yellow text-black' : ''
               ]">
               À propos
               <i class="fa-solid fa-chevron-right"></i>
@@ -60,8 +60,8 @@
             <NuxtLink to="/contact" @click="toggleMobileMenu"
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
               :class="[
-                 $route.path === '/contact'
-                 ? 'bg-yellow text-black' : ''
+                $route.path === '/contact'
+                  ? 'bg-yellow text-black' : ''
               ]">
               Contact
               <i class="fa-solid fa-chevron-right"></i>
@@ -69,8 +69,8 @@
             <NuxtLink to="/devis" @click="toggleMobileMenu"
               class="text-yellow bg-black border text-xl font-semibold mt-3 p-5 hover:bg-yellow hover:text-black flex justify-between items-center"
               :class="[
-                 $route.path === '/devis'
-                 ? 'text-black' : ''
+                $route.path === '/devis'
+                  ? 'text-black' : ''
               ]">
               Devis gratuit
               <i class="fa-solid fa-chevron-right"></i>
@@ -85,10 +85,29 @@
             :class="{ 'text-yellow': $route.path === '/' }">
             Accueil
           </NuxtLink>
-          <NuxtLink to="/realisations" class="text-white hover:text-yellow opacity-90 hover:opacity-100"
-            :class="{ 'text-yellow': $route.path === '/realisations' }">
-            Nos réalisations
-          </NuxtLink>
+
+
+          <div class="relative group" @mouseover="showSubMenu = true" @mouseleave="showSubMenu = false">
+            <NuxtLink to="/realisations" class="text-white hover:text-yellow opacity-90 hover:opacity-100 group"
+              :class="{ 'text-yellow': $route.path === '/realisations' }">
+              Nos réalisations <i class="fa-solid fa-chevron-down"></i>
+            </NuxtLink>
+            <!-- Sous-menu -->
+            <div v-show="showSubMenu" class="subMenu absolute z-50 mt-0 top-full left-0 bg-black text-white p-2 shadow-md"
+              @mouseover="showSubMenu = true" @mouseleave="showSubMenu = false">
+              <NuxtLink to="/realisations#escaliers" class="block mb-4 pb-2 pl-2 border-b hover:text-yellow transition">
+                <i class="fa-solid fa-stairs pr-1"></i> Escaliers
+              </NuxtLink>
+              <NuxtLink to="/realisations#meubles-sur-mesure" class="block mb-4 pb-2 pl-2 border-b hover:text-yellow transition">
+                <i class="fa-solid fa-ruler-combined pr-1"></i> Meubles sur mesure
+              </NuxtLink>
+              <NuxtLink to="/realisations#portes" class="block mb-4 pb-2 pl-2 border-b hover:text-yellow transition">
+                <i class="fa-solid fa-door-closed pr-1"></i> Portes
+              </NuxtLink>
+            </div>
+          </div>
+          
+
           <NuxtLink to="/a-propos" class="text-white hover:text-yellow opacity-90 hover:opacity-100"
             :class="{ 'text-yellow': $route.path === '/a-propos' }">
             À propos
@@ -114,15 +133,18 @@
 <script setup>
 import { ref } from "vue";
 
+//Close the mobile menu
 const mobileMenuOpen = ref(false);
 
-//Close the mobile menu
 const toggleMobileMenu = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value;
 };
+
+//Submenu
+const showSubMenu = ref(false);
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 /** Mobile menu **/
 .mobile-menu-open {
   max-height: 100vh;
@@ -132,5 +154,14 @@ const toggleMobileMenu = () => {
   font-size: 2rem;
   margin-bottom: 15px;
   margin-right: 10px;
+}
+
+/** Desktop menu **/
+/** Sous-menu **/
+.subMenu {
+  width: 200px;
+  font-size: .9rem;
+  border-left: 1px solid #caa673;
+  background: rgba(16, 16, 15, 1);
 }
 </style>
