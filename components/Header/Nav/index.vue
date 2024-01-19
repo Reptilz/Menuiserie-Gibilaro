@@ -31,27 +31,47 @@
               <img src="~/assets/img/logo/Transparent-Logo.png" />
             </NuxtLink>
             <NuxtLink to="/" @click="toggleMobileMenu"
-              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center">
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
+              :class="[
+                 $route.path === '/'
+                 ? 'bg-yellow text-black' : ''
+              ]">
               Accueil
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
             <NuxtLink to="/realisations" @click="toggleMobileMenu"
-              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center">
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
+              :class="[
+                 $route.path === '/realisations'
+                 ? 'bg-yellow text-black' : ''
+              ]">
               Nos réalisations
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
             <NuxtLink to="/a-propos" @click="toggleMobileMenu"
-              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center">
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
+              :class="[
+                 $route.path === '/a-propos'
+                 ? 'bg-yellow text-black' : ''
+              ]">
               À propos
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
             <NuxtLink to="/contact" @click="toggleMobileMenu"
-              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center">
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
+              :class="[
+                 $route.path === '/contact'
+                 ? 'bg-yellow text-black' : ''
+              ]">
               Contact
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
             <NuxtLink to="/devis" @click="toggleMobileMenu"
-              class="text-yellow bg-black border text-xl font-semibold mt-3 p-5 hover:bg-yellow hover:text-black flex justify-between items-center">
+              class="text-yellow bg-black border text-xl font-semibold mt-3 p-5 hover:bg-yellow hover:text-black flex justify-between items-center"
+              :class="[
+                 $route.path === '/devis'
+                 ? 'text-black' : ''
+              ]">
               Devis gratuit
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
@@ -77,15 +97,15 @@
             :class="{ 'text-yellow': $route.path === '/contact' }">
             Contact
           </NuxtLink>
-          <NuxtLink
-      to="/devis"
-      class="nav-devis text-black"
-      :class="[$route.path === '/devis' ? 'bg-black border text-yellow' : 'bg-yellow', 'p-2 font-semibold hover:bg-black hover:text-yellow hover:border']"
-    >
-      Devis gratuit
-    </NuxtLink>
+          <NuxtLink to="/devis" class="nav-devis text-black" :class="[
+            $route.path === '/devis'
+              ? 'bg-black border text-yellow'
+              : 'bg-yellow',
+            'p-2 font-semibold hover:bg-black hover:text-yellow hover:border',
+          ]">
+            Devis gratuit
+          </NuxtLink>
         </div>
-
       </div>
     </div>
   </nav>
@@ -112,4 +132,5 @@ const toggleMobileMenu = () => {
   font-size: 2rem;
   margin-bottom: 15px;
   margin-right: 10px;
-}</style>
+}
+</style>
