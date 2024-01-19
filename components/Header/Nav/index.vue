@@ -57,23 +57,32 @@
         </div>
 
         <!-- Regular Menu for Desktop - Hidden on Mobile -->
-        <div class="hidden lg:flex lg:flex-grow justify-center items-center xl:text-xl space-x-12">
-          <NuxtLink to="/" class="text-white hover:text-yellow">
+        <div class="hidden lg:flex lg:flex-grow justify-center items-center xl:text-xl mt-12 space-x-12">
+          <NuxtLink to="/" class="text-white hover:text-yellow opacity-90 hover:opacity-100"
+            :class="{ 'text-yellow': $route.path === '/' }">
             Accueil
           </NuxtLink>
-          <NuxtLink to="/realisations" class="text-white hover:text-yellow">
+          <NuxtLink to="/realisations" class="text-white hover:text-yellow opacity-90 hover:opacity-100"
+            :class="{ 'text-yellow': $route.path === '/realisations' }">
             Nos réalisations
           </NuxtLink>
-          <NuxtLink to="/a-propos" class="text-white hover:text-yellow">
+          <NuxtLink to="/a-propos" class="text-white hover:text-yellow opacity-90 hover:opacity-100"
+            :class="{ 'text-yellow': $route.path === '/a-propos' }">
             À propos
           </NuxtLink>
-          <NuxtLink to="/contact" class="text-white hover:text-yellow">
+          <NuxtLink to="/contact" class="text-white hover:text-yellow opacity-90 hover:opacity-100"
+            :class="{ 'text-yellow': $route.path === '/contact' }">
             Contact
           </NuxtLink>
-          <NuxtLink to="/devis" class="nav-devis text-black bg-yellow p-2 font-semibold hover:bg-black hover:text-yellow hover:border">
-            Devis gratuit
-          </NuxtLink>
+          <NuxtLink
+      to="/devis"
+      class="nav-devis text-black"
+      :class="[$route.path === '/devis' ? 'bg-black border text-yellow' : 'bg-yellow', 'p-2 font-semibold hover:bg-black hover:text-yellow hover:border']"
+    >
+      Devis gratuit
+    </NuxtLink>
         </div>
+
       </div>
     </div>
   </nav>
@@ -100,5 +109,4 @@ const toggleMobileMenu = () => {
   font-size: 2rem;
   margin-bottom: 15px;
   margin-right: 10px;
-}
-</style>
+}</style>
