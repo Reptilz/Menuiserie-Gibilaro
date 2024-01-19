@@ -31,27 +31,27 @@
               <img src="~/assets/img/logo/Transparent-Logo.png" />
             </NuxtLink>
             <NuxtLink to="/" @click="toggleMobileMenu"
-              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center">
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center">
               Accueil
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
             <NuxtLink to="/realisations" @click="toggleMobileMenu"
-              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center">
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center">
               Nos réalisations
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
             <NuxtLink to="/a-propos" @click="toggleMobileMenu"
-              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center">
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center">
               À propos
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
             <NuxtLink to="/contact" @click="toggleMobileMenu"
-              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow flex justify-between items-center">
+              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center">
               Contact
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
             <NuxtLink to="/devis" @click="toggleMobileMenu"
-              class="text-black bg-yellow text-xl font-semibold mt-3 p-5 hover:bg-black hover:text-yellow hover:border flex justify-between items-center">
+              class="text-yellow bg-black border text-xl font-semibold mt-3 p-5 hover:bg-yellow hover:text-black flex justify-between items-center">
               Devis gratuit
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
