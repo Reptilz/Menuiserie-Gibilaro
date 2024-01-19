@@ -2,7 +2,10 @@
   <nav class="bg-black p-0 border-b-2 border-yellow">
     <div class="container mx-auto">
       <div class="flex items-center justify-between">
-        <img src="~/assets/img/logo/Transparent-Logo.png" alt="Menuiserie Gibilaro logo" class="w-56" />
+        <!-- LOGO -->
+        <NuxtLink to="/">
+          <img src="~/assets/img/logo/Transparent-Logo.png" alt="Menuiserie Gibilaro logo" class="w-56" />
+        </NuxtLink>
 
         <!-- Burger Menu for Mobile -->
         <div v-if="!mobileMenuOpen" class="lg:hidden">
