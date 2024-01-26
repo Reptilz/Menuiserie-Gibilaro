@@ -58,6 +58,15 @@
                 <NuxtLink @click="toggleMobileMenu" to="/realisations">
                   <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Portes</div>
                 </NuxtLink>
+                <NuxtLink @click="toggleMobileMenu" to="/realisations">
+                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Portes</div>
+                </NuxtLink>
+                <NuxtLink @click="toggleMobileMenu" to="/realisations">
+                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Portes</div>
+                </NuxtLink>
+                <NuxtLink @click="toggleMobileMenu" to="/realisations">
+                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Portes</div>
+                </NuxtLink>
               </div>
             </div>
 
