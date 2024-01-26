@@ -1,6 +1,6 @@
 <template>
   <!-- Footer -->
-  <footer v-show="!mobileMenuOpen" class="mt-auto">
+  <footer v-if="!mobileMenuOpen" class="mt-auto">
     <section :class="{ 'bg-black text-black': mobileMenuOpen, 'bg-white text-black': !mobileMenuOpen }">
       <div
         class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
