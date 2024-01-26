@@ -39,15 +39,29 @@
               Accueil
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
-            <NuxtLink to="/realisations" @click="toggleMobileMenu"
-              class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
-              :class="[
-                $route.path === '/realisations'
-                  ? 'bg-yellow text-black' : ''
-              ]">
-              Nos réalisations
-              <i class="fa-solid fa-chevron-right"></i>
-            </NuxtLink>
+
+
+            <div>
+              <NuxtLink to="/realisations"
+                class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
+                :class="[$route.path === '/realisations' ? 'bg-yellow text-black' : '']" @click="toggleSubMenuMobile">
+                Nos réalisations
+                <i :class="{'fa-solid fa-chevron-right': !isSubMenuMobileVisible, 'fa-solid fa-chevron-down': isSubMenuMobileVisible}"></i>
+              </NuxtLink>
+              <div class="subMenuMobile" v-if="isSubMenuMobileVisible">
+                <NuxtLink @click="toggleMobileMenu" to="/realisations">
+                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Escaliers</div>
+                </NuxtLink>
+                <NuxtLink @click="toggleMobileMenu" to="/realisations">
+                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Meubles sur mesure</div>
+                </NuxtLink>
+                <NuxtLink @click="toggleMobileMenu" to="/realisations">
+                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Portes</div>
+                </NuxtLink>
+              </div>
+            </div>
+
+
             <NuxtLink to="/a-propos" @click="toggleMobileMenu"
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
               :class="[
@@ -98,7 +112,8 @@
               <NuxtLink to="/realisations#escaliers" class="block mb-4 pb-2 pl-2 border-b hover:text-yellow transition">
                 <i class="fa-solid fa-stairs pr-1"></i> Escaliers
               </NuxtLink>
-              <NuxtLink to="/realisations#meubles-sur-mesure" class="block mb-4 pb-2 pl-2 border-b hover:text-yellow transition">
+              <NuxtLink to="/realisations#meubles-sur-mesure"
+                class="block mb-4 pb-2 pl-2 border-b hover:text-yellow transition">
                 <i class="fa-solid fa-ruler-combined pr-1"></i> Meubles sur mesure
               </NuxtLink>
               <NuxtLink to="/realisations#portes" class="block mb-4 pb-2 pl-2 border-b hover:text-yellow transition">
@@ -106,7 +121,7 @@
               </NuxtLink>
             </div>
           </div>
-          
+
 
           <NuxtLink to="/a-propos" class="text-white hover:text-yellow opacity-90 hover:opacity-100"
             :class="{ 'text-yellow': $route.path === '/a-propos' }">
@@ -142,6 +157,21 @@ const toggleMobileMenu = () => {
 
 //Submenu
 const showSubMenu = ref(false);
+
+
+
+//Submenu mobile
+const isSubMenuMobileVisible = ref(false);
+
+const toggleSubMenuMobile = () => {
+  isSubMenuMobileVisible.value = !isSubMenuMobileVisible.value;
+};
+
+// Fermer le sous-menu lors du changement de route
+const closeSubMenuOnRouteChange = () => {
+  isSubMenuVisible.value = false;
+};
+
 </script>
 
 <style scoped lang="scss">
@@ -155,6 +185,7 @@ const showSubMenu = ref(false);
   margin-bottom: 15px;
   margin-right: 10px;
 }
+
 
 /** Desktop menu **/
 /** Sous-menu **/
