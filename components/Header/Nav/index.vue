@@ -110,24 +110,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-//Close the mobile menu
-const mobileMenuOpen = ref(false);
-
-const toggleMobileMenu = () => {
-  mobileMenuOpen.value = !mobileMenuOpen.value;
-};
-
-
-
-//Submenu mobile
-const isSubMenuMobileVisible = ref(false);
-
-const toggleSubMenuMobile = () => {
-  isSubMenuMobileVisible.value = !isSubMenuMobileVisible.value;
-};
-
 </script>
 
 <style scoped lang="scss">
