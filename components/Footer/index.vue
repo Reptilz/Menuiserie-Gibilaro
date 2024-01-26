@@ -1,7 +1,7 @@
 <template>
   <!-- Footer -->
-  <footer v-if="!mobileMenuOpen" class="mt-auto">
-    <section :class="{ 'bg-black text-black': mobileMenuOpen, 'bg-white text-black': !mobileMenuOpen }">
+  <footer class="mt-auto">
+    <section class="bg-white text-black">
       <div
         class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
       >
@@ -95,7 +95,6 @@
 </template>
 
 <script setup>
-
 </script>
 
 <style lang="scss" scoped>

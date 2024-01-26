@@ -26,7 +26,7 @@
             </button>
           </div>
 
-          <div class="flex flex-col">
+          <div class="flex flex-col bg-black">
             <NuxtLink to="/" @click="toggleMobileMenu" class="mx-auto w-64">
               <img src="~/assets/img/logo/Transparent-Logo.png" />
             </NuxtLink>
