@@ -50,22 +50,13 @@
               </NuxtLink>
               <div class="subMenuMobile" v-if="isSubMenuMobileVisible">
                 <NuxtLink @click="toggleMobileMenu" to="/realisations">
-                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Escaliers</div>
+                  <div class="px-8 py-3 font-semibold bg-blackLight bg-opacity-90 hover:bg-yellow hover:text-black">Escaliers</div>
                 </NuxtLink>
                 <NuxtLink @click="toggleMobileMenu" to="/realisations">
-                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Meubles sur mesure</div>
+                  <div class="px-8 py-3 font-semibold bg-blackLight bg-opacity-90 hover:bg-yellow hover:text-black">Meubles sur mesure</div>
                 </NuxtLink>
                 <NuxtLink @click="toggleMobileMenu" to="/realisations">
-                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Portes</div>
-                </NuxtLink>
-                <NuxtLink @click="toggleMobileMenu" to="/realisations">
-                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Portes</div>
-                </NuxtLink>
-                <NuxtLink @click="toggleMobileMenu" to="/realisations">
-                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Portes</div>
-                </NuxtLink>
-                <NuxtLink @click="toggleMobileMenu" to="/realisations">
-                  <div class="px-8 py-2 my-2 bg-blackLight bg-opacity-30 hover:bg-yellow hover:text-black"><i class="fa-solid fa-minus mr-2"></i> Portes</div>
+                  <div class="px-8 py-3 font-semibold bg-blackLight bg-opacity-90 hover:bg-yellow hover:text-black">Portes</div>
                 </NuxtLink>
               </div>
             </div>
@@ -110,6 +101,21 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+const mobileMenuOpen = ref(false);
+
+//Close the mobile menu
+const toggleMobileMenu = () => {
+  mobileMenuOpen.value = !mobileMenuOpen.value;
+};
+
+//Open submenu for mobile menu
+const isSubMenuMobileVisible = ref(false);
+
+const toggleSubMenuMobile = () => {
+  isSubMenuMobileVisible.value = !isSubMenuMobileVisible.value;
+};
 </script>
 
 <style scoped lang="scss">
