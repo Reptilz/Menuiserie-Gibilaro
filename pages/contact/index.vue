@@ -78,16 +78,16 @@
                         </h2>
                         <a href="https://www.facebook.com/profile.php?id=61555018767781"
                             class="inline-block mr-4 ml-5 text-xl" target="_blank">
-                            <i class="fa-brands fa-square-facebook hover:text-yellow"></i>
+                            <i class="fa-brands fa-square-facebook transition-all duration-300 hover:text-yellow"></i>
                         </a>
                         <a href="https://www.instagram.com/menuiserie.gibilaro/"
                             class="inline-block mr-4 lf- text-blue-400 dark:text-blue-400 dark:hover:text-blue-300 hover:text-blue-600"
                             target="_blank">
-                            <i class="fa-brands fa-instagram hover:text-yellow"></i>
+                            <i class="fa-brands fa-instagram transition-all duration-300 hover:text-yellow"></i>
                         </a>
                         <a href="#"
                             class="inline-block mr-4 text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300">
-                            <i class="fa-brands fa-linkedin hover:text-yellow"></i>
+                            <i class="fa-brands fa-linkedin transition-all duration-300 hover:text-yellow"></i>
                         </a>
                     </div>
                 </div>
