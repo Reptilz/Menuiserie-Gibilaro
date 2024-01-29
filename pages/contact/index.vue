@@ -24,7 +24,7 @@
                 <!-- EMAIL -->
                 <div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
                     <div
-                        class="h-full py-12 text-center bg-dark border-2 border-yellow rounded-lg transition-all hover:shadow-lg hover:shadow-yellow">
+                        class="h-full py-12 text-center bg-dark border-2 border-yellow rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-yellow">
                         <div
                             class="inline-flex items-center justify-center w-12 h-12 mb-6 bg-yellow text-black rounded-full dark:bg-blue-500">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -37,14 +37,14 @@
                             E-mail
                         </h2>
                         <a href="mailto:menuiseriegibilaro.flavio@gmail.com"
-                            class="text-base text-gray-500 md:text-md hover:text-yellow">menuiseriegibilaro.flavio@gmail.com</a>
+                            class="text-base text-gray-500 md:text-md transition-all duration-300 hover:text-yellow">menuiseriegibilaro.flavio@gmail.com</a>
                     </div>
                 </div>
 
                 <!-- TELEPHONE -->
                 <div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
                     <div
-                        class="h-full py-12 text-center bg-dark border-2 border-yellow rounded-lg transition-all hover:shadow-lg hover:shadow-yellow">
+                        class="h-full py-12 text-center bg-dark border-2 border-yellow rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-yellow">
                         <div
                             class="inline-flex items-center justify-center bg-yellow text-black w-12 h-12 mb-6 text-gray-100 bg-blue-500 rounded-full dark:bg-blue-500">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -57,14 +57,14 @@
                             Téléphone
                         </h2>
                         <a href="tel:+32498800504"
-                            class="text-base font-medium text-gray-500 md:text-lg hover:text-yellow">+32 498 80 05 04</a>
+                            class="text-base font-medium text-gray-500 md:text-lg transition-all duration-300 hover:text-yellow">+32 498 80 05 04</a>
                     </div>
                 </div>
 
                 <!-- SOCIAL -->
                 <div class="w-full px-4 mb-4 lg:w-1/3 lg:mb-0">
                     <div
-                        class="h-full py-12 text-center bg-dark border-2 border-yellow rounded-lg transition-all hover:shadow-lg hover:shadow-yellow">
+                        class="h-full py-12 text-center bg-dark border-2 border-yellow rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-yellow">
                         <div
                             class="inline-flex items-center justify-center w-12 h-12 mb-6 text-black bg-yellow rounded-full dark:bg-blue-500">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
