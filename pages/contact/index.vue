@@ -13,9 +13,9 @@
                             <div class="flex-1 mt-4 h-2 bg-yellow"></div>
                         </div>
                     </div>
-                    <p class="mb-16 text-base text-center">
-                        Prêt à concrétiser votre projet? Contactez-nous pour un devis
-                        gratuit sans engagement. Nous sommes là pour donner vie à vos idées
+                    <p class="mb-16 text-base text-center font-semibold">
+                        Prêt à concrétiser votre projet? Contactez-nous pour un <span class="font-bold text-lg">devis
+                        gratuit</span> sans engagement. Nous sommes là pour donner vie à vos idées
                         !
                     </p>
                 </div>
