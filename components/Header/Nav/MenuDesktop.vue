@@ -1,5 +1,5 @@
 <template>
-    <div class="hidden lg:flex lg:flex-grow justify-center items-center xl:text-xl mt-12 space-x-12">
+    <div class="hidden lg:flex lg:flex-grow justify-center items-center xl:text-xl mt-12 space-x-12 font-poppins">
           <NuxtLink to="/" class="text-white hover:text-yellow opacity-90 transition-all duration-300 hover:opacity-100"
             :class="{ 'text-yellow': $route.path === '/' }">
             Accueil
