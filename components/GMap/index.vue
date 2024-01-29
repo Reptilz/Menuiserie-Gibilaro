@@ -21,21 +21,21 @@
           <div>
             <div class="max-w-full mx-auto rounded-lg overflow-hidden">
               <div class="px-6 py-4">
-                <h3 class="text-lg font-medium text-gray-900">Notre adresse</h3>
+                <h3 class="text-lg font-medium text-yellow">Notre adresse</h3>
                 <p class="mt-1 text-gray-600">
                   Rue de la Station 12, 4610 Beyne-Heusay
                 </p>
               </div>
-              <div class="border-t border-gray-200 px-6 py-4">
-                <h3 class="text-lg font-medium text-gray-900">
+              <div class="border-t border-yellow px-6 py-4">
+                <h3 class="text-lg font-medium text-yellow">
                   Heures d'ouverture
                 </h3>
                 <p class="mt-1 text-gray-600">Lundi : Vendredi: 8h30 - 18h30</p>
                 <p class="mt-1 text-gray-600">Samedi : 10h00 - 17h30</p>
                 <p class="mt-1 text-gray-600">Dimanche : Fermé</p>
               </div>
-              <div class="border-t border-gray-200 px-6 py-4">
-                <h3 class="text-lg font-medium text-gray-900">Contact</h3>
+              <div class="border-t border-yellow px-6 py-4">
+                <h3 class="text-lg font-medium text-yellow">Contact</h3>
                 <p class="mt-1 text-gray-600">
                   E-mail : menuiseriegibilaro.flavio@gmail.com
                 </p>
