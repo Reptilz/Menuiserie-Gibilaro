@@ -16,7 +16,7 @@
 
         <!-- Mobile Menu -->
         <div v-show="mobileMenuOpen" :class="{ 'mobile-menu-open': mobileMenuOpen }"
-          class="bg-black lg:hidden absolute inset-0 bg-gray-800 bg-opacity-100 z-50 origin-right">
+          class="bg-black lg:hidden absolute fixed inset-0 bg-gray-800 bg-opacity-100 z-50 h-screen w-full overflow-y-auto">
           <div class="flex justify-end pr-8 pt-8">
             <button @click="toggleMobileMenu" class="text-white focus:outline-none">
               <svg class="h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
