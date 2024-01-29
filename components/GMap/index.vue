@@ -19,27 +19,36 @@
             ></iframe>
           </div>
           <div>
-            <div class="max-w-full mx-auto rounded-lg overflow-hidden">
-              <div class="px-6 py-4">
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-full mx-auto rounded-lg overflow-hidden"
+            >
+              <div class="col-span-1 border-t md:border-r border-yellow px-6 py-4">
                 <h3 class="text-lg font-medium text-yellow">Notre adresse</h3>
                 <p class="mt-1 text-gray-600">
-                  Rue de la Station 12, 4610 Beyne-Heusay
+                  Rue de la Station 12, <br /> 4610 Beyne-Heusay <br /> Liège, Belgique
                 </p>
               </div>
-              <div class="border-t border-yellow px-6 py-4">
+              <!-- <div class="col-span-1 border-r border-yellow px-6 py-4">
                 <h3 class="text-lg font-medium text-yellow">
                   Heures d'ouverture
                 </h3>
-                <p class="mt-1 text-gray-600">Lundi : Vendredi: 8h30 - 18h30</p>
+                <p class="mt-1 text-gray-600">Lundi - Vendredi: 8h30 - 18h30</p>
                 <p class="mt-1 text-gray-600">Samedi : 10h00 - 17h30</p>
                 <p class="mt-1 text-gray-600">Dimanche : Fermé</p>
-              </div>
-              <div class="border-t border-yellow px-6 py-4">
+              </div> -->
+              <div class="col-span-2 border-t md:border-l border-yellow px-6 lg:px-8 py-4">
                 <h3 class="text-lg font-medium text-yellow">Contact</h3>
-                <p class="mt-1 text-gray-600">
-                  E-mail : menuiseriegibilaro.flavio@gmail.com
+                <p class="mt-1 text-gray-600 transition-all duration-300 hover:text-yellow">
+                  <a href="mailto:menuiseriegibilaro.flavio@gmail.com"><i class="fa-solid fa-envelope"></i> menuiseriegibilaro.flavio@gmail.com</a>
                 </p>
-                <p class="mt-1 text-gray-600">Téléphone : +32 498 80 05 04</p>
+                <p class="mt-1 text-gray-600 transition-all duration-300 hover:text-yellow">
+                  <a href="tel:+32498800504"><i class="fa-solid fa-phone"></i> +32 498 80 05 04</a>
+                </p>
+                <div class="logo-contact-gmap mt-2 text-xl">
+                  <a href="https://www.facebook.com/profile.php?id=61555018767781" target="_blank"><i class="fa-brands fa-square-facebook pr-4 hover:text-yellow"></i></a>
+                  <a href="https://www.instagram.com/menuiserie.gibilaro" target="_blank"><i class="fa-brands fa-instagram pr-4 transition-all duration-300 hover:text-yellow"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin transition-all duration-300 hover:text-yellow"></i></a>
+                </div>
               </div>
             </div>
           </div>
