@@ -83,9 +83,10 @@
                     <div class="mb-32 md:mb-0">
                         <div class="block h-full rounded-lg bg-white">
                             <div class="flex justify-center">
-                                <div class="rounded-full shadow-xl dark:shadow-black/20 w-[150px]">
-                                    <img src="~/assets/img/team/flavio.jpg" alt="Flavio"
-                                        class="mx-auto rounded-full shadow-lg w-[150px]" />
+                                <div class="flex justify-center -mt-[75px]">
+                                    <img src="~/assets/img/team/flavio.jpg"
+                                        class="mx-auto rounded-full shadow-xl dark:shadow-black/20 w-[150px]"
+                                        alt="Flavio" />
                                 </div>
                             </div>
                             <div class="p-6">
