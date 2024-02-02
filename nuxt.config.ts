@@ -13,5 +13,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  
+  plugins: [
+    { src: '~/plugins/scroll-behavior.client.ts', mode: 'client' }
+  ],
 })

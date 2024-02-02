@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-black p-0 border-b-2 border-yellow">
+  <nav class="navbar-desk bg-black p-0 border-b-2 border-yellow">
     <div class="container mx-auto">
       <div class="flex items-center justify-between">
         <!-- LOGO -->
@@ -80,7 +80,7 @@
               Contact
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
-            <NuxtLink to="/devis" @click="toggleMobileMenu"
+            <NuxtLink to="/contact" @click="toggleMobileMenu"
               class="text-yellow bg-black border text-xl font-semibold mt-3 p-5 hover:bg-yellow hover:text-black flex justify-between items-center"
               :class="[
                 $route.path === '/devis'

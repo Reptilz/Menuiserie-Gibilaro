@@ -36,7 +36,7 @@
             :class="{ 'text-yellow': $route.path === '/contact' }">
             Contact
           </NuxtLink>
-          <NuxtLink to="/devis" class="nav-devis text-black" :class="[
+          <NuxtLink to="/contact" class="nav-devis text-black" :class="[
             $route.path === '/devis'
               ? 'bg-black border text-yellow'
               : 'bg-yellow',
