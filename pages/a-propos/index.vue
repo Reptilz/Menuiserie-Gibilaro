@@ -127,7 +127,7 @@
                             </div>
                             <div class="p-6">
                                 <h5 class="mb-2 text-lg font-bold">Fabian</h5>
-                                <p class="mb-6">Sous-traitant — Menuisier </p>
+                                <p class="mb-6">Partenaire — Menuisier </p>
                                 <ul class="mx-auto flex list-inside justify-center">
                                     <a href="https://www.facebook.com/profile.php?id=100057529865596" class="px-2"
                                         target="_blank">
