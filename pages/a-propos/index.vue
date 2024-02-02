@@ -83,7 +83,7 @@
                     <div class="mb-32 md:mb-0">
                         <div class="block h-full rounded-lg bg-white">
                             <div class="flex justify-center">
-                                <div class="flex justify-center -mt-[75px]">
+                                <div class="rounded-full shadow-xl dark:shadow-black/20 w-[150px]">
                                     <img src="~/assets/img/team/flavio.jpg" alt="Flavio"
                                         class="mx-auto rounded-full shadow-lg w-[150px]" />
                                 </div>
@@ -120,7 +120,7 @@
                             <div class="flex justify-center">
                                 <div class="flex justify-center -mt-[75px]">
                                     <img src="~/assets/img/team/jordan.jpg"
-                                        class="mx-auto rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
+                                        class="mx-auto rounded-full shadow-xl dark:shadow-black/20 w-[150px]"
                                         alt="Jordan" />
                                 </div>
                             </div>
