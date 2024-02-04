@@ -120,7 +120,7 @@
                         <div class="block h-full rounded-lg bg-white">
                             <div class="flex justify-center">
                                 <div class="flex justify-center -mt-[75px]">
-                                    <img src="~/assets/img/team/fabian.jpg"
+                                    <img src="~/assets/img/team/fabian.png"
                                         class="mx-auto rounded-full shadow-xl dark:shadow-black/20 w-[150px]"
                                         alt="Fabian Pellens" />
                                 </div>
