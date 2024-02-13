@@ -6,27 +6,61 @@ useHead({
 
 
 <template>
-    <!-- Banner: TABLET AND DESKTOP -->
-    <section class="mb-40 hidden md:block">
-        <div class="relative overflow-hidden">
-            <img src="~/assets/img/banner-menuiserie.webp" class="banner-image-header w-full object-cover"
-                alt="Banner Menuiserie Gibilaro">
-            <div
-                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.80)] bg-fixed">
-                <div class="flex h-full items-center justify-center">
-                    <div class="px-6 text-center text-white md:px-12">
-                        <h1 class="block-text-banner mt-2 mb-16 text-3xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-                            La menuiserie d'exception <br /><span class="text-5xl">Donnez vies à vos idées</span>
-                        </h1>
-                        <NuxtLink
-                            class="btn-team cursor-pointer text-xl px-4 py-3 font-bold transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
-                            Nous découvrir <i class="arrow-transition pl-1 fa-solid fa-arrow-right-long"></i>
-                        </NuxtLink>
+    <div class="main-index bg-black">
+        <!-- Banner: TABLET AND DESKTOP -->
+        <section class="mb-0 lg:mb-44 hidden md:block">
+            <div class="relative overflow-hidden">
+                <img src="~/assets/img/banner-menuiserie.webp" class="banner-image-header w-full object-cover"
+                    alt="Banner Menuiserie Gibilaro">
+                <div
+                    class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.80)] bg-fixed">
+                    <div class="flex h-full items-center justify-center">
+                        <div class="px-6 text-center text-white md:px-12">
+                            <h1
+                                class="block-text-banner mt-2 mb-16 text-3xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+                                La menuiserie d'exception <br /><span class="text-5xl">Donnez vies à vos idées</span>
+                            </h1>
+                            <NuxtLink
+                                class="btn-team cursor-pointer text-xl px-4 py-3 font-bold transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
+                                Nous découvrir <i class="arrow-transition pl-1 fa-solid fa-arrow-right-long"></i>
+                            </NuxtLink>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+
+        <!-- SECTION: PRESENT -->
+        <section class="mb-40 md:mt-0 bg-black">
+            <h5 class="text-center text-3xl md:text-5xl hidden lg:block"><span class="font-thin">Notre</span> <span
+                    class="font-bold underline decoration-yellow">expertise</span></h5>
+            <div class="px-4 py-12 text-center md:px-12 lg:text-left">
+                <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl xl:px-32">
+                    <div class="grid items-center lg:grid-cols-2">
+                        <div class="z-50 mb-12 md:mt-12 lg:mt-0 lg:mb-0">
+                            <div
+                                class="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-2 pb-0 pt-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
+                                <h1 class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
+                                    Menuiserie <span class="text-yellow">Gibilaro</span>
+                                </h1>
+                                <p class="pb-16">Artisan menuisier passionné, nous façonnons des créations sur mesure pour embellir votre
+                                    espace de vie. Expertise dans la conception et l'installation de meubles, portes,
+                                    fenêtres et agencements intérieurs. Transformez votre espace avec notre savoir-faire
+                                    exceptionnel. Qualité, durabilité et design au cœur de notre engagement. Contactez-nous
+                                    pour donner vie à vos projets de menuiserie résidentielle ou commerciale.</p>
+                            </div>
+                        </div>
+                        <div class="md:mb-12 lg:mb-0 right-0 left-0 hidden lg:block">
+                            <img src="~/assets/img/aboutmenuiserie.jpg"
+                                class="w-full rounded-lg shadow-lg"
+                                alt="Menuiserie Gibilaro - About" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -37,5 +71,4 @@ useHead({
 
 .block-text-banner {
     line-height: .8;
-}
-</style>
+}</style>
