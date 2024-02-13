@@ -1,5 +1,8 @@
 <template>
-    <div class="hidden lg:flex lg:flex-grow justify-center items-center xl:text-xl mt-12 space-x-12 font-poppins">
+    <div class="hidden lg:flex lg:flex-grow justify-center items-center xl:text-xl mt-12 space-x-12 font-poppins" :class="{ 'fixed-nav': isNavFixed }">
+      <NuxtLink to="/" v-if="isNavFixed">
+          <img src="~/assets/img/logo/Original_Logo_Symbol-removebg-preview.png" alt="Menuiserie Gibilaro logo" class="logo-nav-fixed w-20 absolute bottom-2" />
+      </NuxtLink>
           <NuxtLink to="/" class="text-white hover:text-yellow opacity-90 transition-all duration-300 hover:opacity-100"
             :class="{ 'text-yellow': $route.path === '/' }">
             Accueil
@@ -48,8 +51,28 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const showSubMenu = ref(false);
+
+// NAV FIXED AND FOLLOW ON SCROLLING
+const isNavFixed = ref(false);
+
+const handleScroll = () => {
+  if (window.pageYOffset > 200) {
+    isNavFixed.value = true;
+  } else {
+    isNavFixed.value = false;
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 
 </script>
 
@@ -61,5 +84,28 @@ const showSubMenu = ref(false);
   font-size: .9rem;
   border-left: 1px solid #caa673;
   background: rgba(16, 16, 15, 1);
+}
+
+
+.fixed-nav {
+  position: fixed;
+  background: #10100F;
+  border-bottom: 2px solid #caa673;
+  top: 40px;
+  left: 0;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1rem;
+  transition: transform 0.3s ease-in-out; /* Animation pour une transition fluide */
+  transform: translateY(-100%);
+}
+
+.fixed-nav.active {
+  transform: translateY(0%);
+}
+
+.logo-nav-fixed {
+  left: 750px;
 }
 </style>
