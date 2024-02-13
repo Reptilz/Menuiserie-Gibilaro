@@ -38,7 +38,7 @@ useHead({
             <div class="px-4 py-12 text-center md:px-12 lg:text-left">
                 <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl xl:px-32">
                     <div class="grid items-center lg:grid-cols-2">
-                        <div class="z-50 mb-12 md:mt-12 lg:mt-0 lg:mb-0">
+                        <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
                             <div
                                 class="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-2 pb-0 pt-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
                                 <h1 class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
