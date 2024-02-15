@@ -21,7 +21,7 @@ useHead({
                                 La menuiserie d'exception <br /><span class="text-5xl">Donnez vies à vos idées</span>
                             </h1>
                             <NuxtLink
-                                class="btn-team cursor-pointer text-xl px-4 py-3 font-bold transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
+                                class="btn-transition cursor-pointer text-xl px-8 py-3 font-bold transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
                                 Nous découvrir <i class="arrow-transition pl-1 fa-solid fa-arrow-right-long"></i>
                             </NuxtLink>
                         </div>
@@ -44,16 +44,30 @@ useHead({
                                 <h1 class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
                                     Menuiserie <span class="text-yellow">Gibilaro</span>
                                 </h1>
-                                <p class="pb-16">Artisan menuisier passionné, nous façonnons des créations sur mesure pour embellir votre
+                                <p class="pb-16">Artisan menuisier passionné, nous façonnons des créations sur mesure pour
+                                    embellir votre
                                     espace de vie. Expertise dans la conception et l'installation de meubles, portes,
                                     fenêtres et agencements intérieurs. Transformez votre espace avec notre savoir-faire
                                     exceptionnel. Qualité, durabilité et design au cœur de notre engagement. Contactez-nous
                                     pour donner vie à vos projets de menuiserie résidentielle ou commerciale.</p>
+                                <div class="devis-index md:relative md:left-1/4 lg:left-0">
+                                    <NuxtLink to="/contact">
+                                        <!--hidden on mobile-->
+                                        <button class="btn-devis pb-12 font-bold text-yellow hidden md:block">
+                                            <span class="textBtn-devis">Demander votre devis gratuitement</span> <i
+                                                class="arrow-transition pl-1 fa-solid fa-arrow-right-long"></i>
+                                        </button>
+                                        <!--hidden on desktop-->
+                                        <button class="px-4 py-3 font-bold md:hidden transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
+                                            <span>Demander votre devis gratuit</span> <i
+                                                class="arrow-transitions pl-1 fa-solid fa-arrow-right-long"></i>
+                                        </button>
+                                    </NuxtLink>
+                                </div>
                             </div>
                         </div>
                         <div class="md:mb-12 lg:mb-0 right-0 left-0 hidden lg:block">
-                            <img src="~/assets/img/aboutmenuiserie.jpg"
-                                class="w-full rounded-lg shadow-lg"
+                            <img src="~/assets/img/aboutmenuiserie.jpg" class="w-full rounded-lg shadow-lg"
                                 alt="Menuiserie Gibilaro - About" />
                         </div>
                     </div>
@@ -71,4 +85,37 @@ useHead({
 
 .block-text-banner {
     line-height: .8;
-}</style>
+}
+
+//button devis animations
+.devis-index {
+    .arrow-transition, .textBtn-devis::before {
+        transition: transform 1s ease, width 1s ease;
+    }
+
+    .textBtn-devis::before {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #caa673; 
+    }
+
+    .textBtn-devis {
+        position: relative;
+    }
+
+    &:hover {
+        .arrow-transition {
+            transform: translateX(20px) scale(2);
+        }
+        .textBtn-devis::before {
+            width: 100%; 
+        }
+    }
+}
+
+
+</style>

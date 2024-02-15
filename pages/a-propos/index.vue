@@ -64,7 +64,7 @@
                             </li>
                         </ul>
                         <NuxtLink :to="{ hash: '#team' }"
-                            class="btn-team px-4 py-3 font-bold transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
+                            class="btn-transition px-4 py-3 font-bold transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
                             Découvrir notre équipe <i class="arrow-transition pl-1 fa-solid fa-arrow-right-long"></i>
                         </NuxtLink>
                     </div>
@@ -196,7 +196,7 @@
 
 <style lang="scss">
 //BTN BUTTON WITH ARROW
-.btn-team {
+.btn-transition {
     .arrow-transition {
         transition: transform 0.3s ease;
     }

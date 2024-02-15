@@ -105,20 +105,19 @@ onUnmounted(() => {
   left: 750px;
 }
 @media (min-width: 1024px) {
-  .logo-nav-fixed {
-  left: 50px;
+    .logo-nav-fixed {
+    left: 50px;
+  }
 }
-
 @media (min-width: 1440px) {
-  .logo-nav-fixed {
-  left: 150px;
-}
+    .logo-nav-fixed {
+    left: 150px;
+  } 
 }
 
 @media (min-width: 2560px) {
-  .logo-nav-fixed {
-  left: 600px;
-}
-}
+    .logo-nav-fixed {
+    left: 600px;
+  }
 }
 </style>
