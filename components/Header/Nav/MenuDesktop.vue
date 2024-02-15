@@ -1,7 +1,7 @@
 <template>
     <div class="hidden lg:flex lg:flex-grow justify-center items-center xl:text-xl mt-12 space-x-12 font-poppins" :class="{ 'fixed-nav': isNavFixed }">
       <NuxtLink to="/" v-if="isNavFixed">
-          <img src="~/assets/img/logo/Original_Logo_Symbol-removebg-preview.png" alt="Menuiserie Gibilaro logo" class="logo-nav-fixed w-20 absolute bottom-2" />
+          <img src="~/assets/img/logo/Original_Logo_Symbol-removebg-preview.png" alt="Menuiserie Gibilaro logo" class="logo-nav-fixed w-20 absolute bottom-2 lg:left-10 xl:left-20" />
       </NuxtLink>
           <NuxtLink to="/" class="text-white hover:text-yellow opacity-90 transition-all duration-300 hover:opacity-100"
             :class="{ 'text-yellow': $route.path === '/' }">
@@ -97,15 +97,28 @@ onUnmounted(() => {
   width: 100%;
   z-index: 1000;
   font-size: 1rem;
-  transition: transform 0.3s ease-in-out; /* Animation pour une transition fluide */
+  transition: transform 0.3s ease-in-out;
   transform: translateY(-100%);
-}
-
-.fixed-nav.active {
-  transform: translateY(0%);
 }
 
 .logo-nav-fixed {
   left: 750px;
+}
+@media (min-width: 1024px) {
+  .logo-nav-fixed {
+  left: 50px;
+}
+
+@media (min-width: 1440px) {
+  .logo-nav-fixed {
+  left: 150px;
+}
+}
+
+@media (min-width: 2560px) {
+  .logo-nav-fixed {
+  left: 600px;
+}
+}
 }
 </style>
