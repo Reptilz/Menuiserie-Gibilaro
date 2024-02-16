@@ -23,5 +23,10 @@ export default {
   plugins: [
     require("tw-elements/dist/plugin.cjs")
   ],
+  safelist: [
+    'animate-[slide-right_1s_ease-in-out]',
+    'animate-[fade-in-up_1s_ease-in-out]',
+    'animate-[fade-in-right_1s_ease-in-out]'
+  ],
 }
 
