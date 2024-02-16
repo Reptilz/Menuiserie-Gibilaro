@@ -5,6 +5,7 @@ export default {
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
     "./app.vue",
     "./error.vue",
     "./node_modules/tw-elements/dist/js/**/*.js",
@@ -19,6 +20,8 @@ export default {
       'blackLight': '#222222',
     },
   },
-  plugins: [require("tw-elements/dist/plugin.cjs")],
+  plugins: [
+    require("tw-elements/dist/plugin.cjs")
+  ],
 }
 

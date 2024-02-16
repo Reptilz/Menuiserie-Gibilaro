@@ -2,6 +2,11 @@
 useHead({
     title: 'Menuiserie Gibilaro',
 })
+
+onMounted(async () => {
+    const { SmoothScroll, initTE } = await import('tw-elements')
+    initTE({ SmoothScroll }, { allowReinits: true })
+})
 </script>
 
 
@@ -20,10 +25,10 @@ useHead({
                                 class="block-text-banner mt-2 mb-16 text-3xl font-bold tracking-tight md:text-6xl xl:text-7xl">
                                 La menuiserie d'exception <br /><span class="text-5xl">Donnez vies à vos idées</span>
                             </h1>
-                            <NuxtLink
-                                class="btn-transition cursor-pointer text-xl px-8 py-3 font-bold transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
+                            <a href="#title-index" data-te-smooth-scroll-init
+                                class="btn-transition btn-scroll-animate cursor-pointer text-xl px-8 py-3 font-bold transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
                                 Nous découvrir <i class="arrow-transition pl-1 fa-solid fa-arrow-right-long"></i>
-                            </NuxtLink>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +46,8 @@ useHead({
                         <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
                             <div
                                 class="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-2 pb-0 pt-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
-                                <h1 class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
+                                <h1 id="title-index"
+                                    class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
                                     Menuiserie <span class="text-yellow">Gibilaro</span>
                                 </h1>
                                 <p class="pb-16">Artisan menuisier passionné, nous façonnons des créations sur mesure pour
@@ -58,7 +64,8 @@ useHead({
                                                 class="arrow-transition pl-1 fa-solid fa-arrow-right-long"></i>
                                         </button>
                                         <!--hidden on desktop-->
-                                        <button class="px-4 py-3 font-bold md:hidden transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
+                                        <button
+                                            class="px-4 py-3 font-bold md:hidden transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
                                             <span>Demander votre devis gratuit</span> <i
                                                 class="arrow-transitions pl-1 fa-solid fa-arrow-right-long"></i>
                                         </button>
@@ -89,7 +96,9 @@ useHead({
 
 //button devis animations
 .devis-index {
-    .arrow-transition, .textBtn-devis::before {
+
+    .arrow-transition,
+    .textBtn-devis::before {
         transition: transform 1s ease, width 1s ease;
     }
 
@@ -100,7 +109,7 @@ useHead({
         left: 0;
         width: 0;
         height: 3px;
-        background-color: #caa673; 
+        background-color: #caa673;
     }
 
     .textBtn-devis {
@@ -111,11 +120,10 @@ useHead({
         .arrow-transition {
             transform: translateX(20px) scale(2);
         }
+
         .textBtn-devis::before {
-            width: 100%; 
+            width: 100%;
         }
     }
 }
-
-
 </style>

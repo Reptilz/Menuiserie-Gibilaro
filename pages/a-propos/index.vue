@@ -63,10 +63,11 @@
                                 Devis Gratuit
                             </li>
                         </ul>
-                        <NuxtLink :to="{ hash: '#team' }"
+                        <a href="#team"
+                            data-te-smooth-scroll-init
                             class="btn-transition px-4 py-3 font-bold transition-all duration-300 transform border text-black bg-yellow border-2 border-yellow hover:bg-black hover:text-yellow">
                             Découvrir notre équipe <i class="arrow-transition pl-1 fa-solid fa-arrow-right-long"></i>
-                        </NuxtLink>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -192,6 +193,11 @@
 </template>
 
 <script setup>
+onMounted(async () => {
+    const { SmoothScroll, initTE } = await import('tw-elements')
+    initTE({ SmoothScroll }, { allowReinits: true })
+})
+
 </script>
 
 <style lang="scss">
