@@ -40,7 +40,7 @@ onMounted(async () => {
         <section class="mb-40 md:mt-0 bg-black">
             <h5 class="text-center text-3xl md:text-5xl hidden lg:block"><span class="font-thin">Notre</span> <span
                     class="font-bold underline decoration-yellow">expertise</span></h5>
-            <div class="px-4 py-12 text-center md:px-12 lg:text-left">
+            <div class="px-4 py-0 md:py-12 text-center md:px-12 lg:text-left">
                 <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl xl:px-32">
                     <div class="grid items-center lg:grid-cols-2">
                         <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0" data-te-animation-init
@@ -88,7 +88,7 @@ onMounted(async () => {
 
 
         <!-- SECTION: REALISATIONS -->
-        <div class="bg-black py-6 sm:py-8 lg:mt-72">
+        <div class="bg-black py-0 md:py-6 sm:py-8 lg:mt-72">
             <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
                 <div class="mb-4 flex items-center sm:mb-8 md:mb-12">
                     <div class="flex items-center" data-te-animation-init data-te-animation-start="onScroll"
