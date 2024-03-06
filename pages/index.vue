@@ -43,24 +43,22 @@ onMounted(async () => {
             <div class="px-4 py-12 text-center md:px-12 lg:text-left">
                 <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl xl:px-32">
                     <div class="grid items-center lg:grid-cols-2">
-                        <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0"
-                                data-te-animation-init
-                                data-te-animation-start="onScroll"
-                                data-te-animation-on-scroll="repeat"
-                                data-te-animation-show-on-load="false"
-                                data-te-animation="[fade-in-up_1s_ease-in-out]"
-                        >
+                        <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0" data-te-animation-init
+                            data-te-animation-start="onScroll" data-te-animation-show-on-load="false"
+                            data-te-animation="[fade-in-up_1s_ease-in-out]">
                             <div
                                 class="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-2 pb-0 pt-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
                                 <h1 id="title-index"
                                     class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
                                     Menuiserie <span class="text-yellow">Gibilaro</span>
                                 </h1>
-                                <p class="pb-16">Artisan menuisier passionné, nous façonnons des créations sur mesure pour
+                                <p class="pb-16">Artisan menuisier passionné, nous façonnons des créations sur mesure
+                                    pour
                                     embellir votre
                                     espace de vie. Expertise dans la conception et l'installation de meubles, portes,
                                     fenêtres et agencements intérieurs. Transformez votre espace avec notre savoir-faire
-                                    exceptionnel. Qualité, durabilité et design au cœur de notre engagement. Contactez-nous
+                                    exceptionnel. Qualité, durabilité et design au cœur de notre engagement.
+                                    Contactez-nous
                                     pour donner vie à vos projets de menuiserie résidentielle ou commerciale.</p>
                                 <div class="devis-index md:relative md:left-1/4 lg:left-0">
                                     <NuxtLink to="/contact">
@@ -87,6 +85,96 @@ onMounted(async () => {
                 </div>
             </div>
         </section>
+
+
+        <!-- SECTION: REALISATIONS -->
+        <div class="bg-black h-screen h-full py-6 sm:py-8 lg:py-48">
+            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                <div class="mb-4 flex items-center sm:mb-8 md:mb-12">
+                    <div class="flex items-center" data-te-animation-init data-te-animation-start="onScroll"
+                        data-te-animation-show-on-load="false" data-te-animation="[fade-in-left_1s_ease-in-out]">
+                        <NuxtLink to="/realisations">
+                            <!-- hidden mobile -->
+                            <h5 class="h5-index md:text-3xl lg:text-4xl font-bold">
+                                Voir
+                                toutes nos
+                                réalisations <i class="arrow-transitions pl-1 fa-solid fa-arrow-right-long"></i>
+                            </h5>
+                        </NuxtLink>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+                    <!-- image - start -->
+                    <NuxtLink to="/realisations" data-te-animation-init data-te-animation-start="onScroll"
+                        data-te-animation-show-on-load="false" data-te-animation="[fade-in-left_1s_ease-in-out]"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                        <img src="~/assets/img/realisations/escaliers.jpg" loading="lazy"
+                            alt="Menuiserie Gibilaro - Escaliers sur mesure"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+
+                        <span
+                            class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Escaliers</span>
+                    </NuxtLink>
+                    <!-- image - end -->
+
+                    <!-- image - start -->
+                    <NuxtLink to="/realisations" data-te-animation-init data-te-animation-start="onScroll"
+                        data-te-animation-show-on-load="false" data-te-animation="[fade-in-right_1s_ease-in-out]"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                        <img src="~/assets/img/realisations/meubles.jpg" loading="lazy"
+                            alt="Menuiserie Gibilaro - Meubles sur mesure"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Meubles sur
+                            mesure</span>
+                    </NuxtLink>
+                    <!-- image - end -->
+
+                    <!-- image - start -->
+                    <NuxtLink to="/realisations" data-te-animation-init data-te-animation-start="onScroll"
+                        data-te-animation-show-on-load="false" data-te-animation="[fade-in-up_1s_ease-in-out]"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                        <img src="~/assets/img/realisations/terrasses.jpg" loading="lazy"
+                            alt="Menuiserie Gibilaro - Terrasse sur mesure"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+
+                        <span
+                            class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Terrasses</span>
+                    </NuxtLink>
+                    <!-- image - end -->
+
+                    <!-- image - start -->
+                    <NuxtLink to="/realisations" data-te-animation-init data-te-animation-start="onScroll"
+                        data-te-animation-show-on-load="false" data-te-animation="[fade-in-left_1s_ease-in-out]"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                        <img src="~/assets/img/realisations/portes.jpg" loading="lazy"
+                            alt="Menuiserie Gibilaro - Portes sur mesure"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+
+                        <span
+                            class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Portes</span>
+                    </NuxtLink>
+                    <!-- image - end -->
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -132,4 +220,34 @@ onMounted(async () => {
         }
     }
 }
+
+
+//Realisations 
+.h5-index .arrow-transitions,
+.h5-index::before {
+    transition: transform 1s ease, width 1s ease;
+}
+
+.h5-index::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #caa673;
+}
+
+.h5-index {
+    position: relative;
+}
+
+.h5-index:hover .arrow-transitions {
+    transform: translateX(30px) scale(2);
+}
+
+.h5-index:hover::before {
+    width: 90%;
+}
 </style>
+import type { NuxtLink } from '#build/components';

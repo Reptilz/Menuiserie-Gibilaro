@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -26,7 +27,9 @@ export default {
   safelist: [
     'animate-[slide-right_1s_ease-in-out]',
     'animate-[fade-in-up_1s_ease-in-out]',
-    'animate-[fade-in-right_1s_ease-in-out]'
+    'animate-[fade-in-right_1s_ease-in-out]',
+    'animate-[fade-in-left_1s_ease-in-out]',
+    'animate-[slide-in-up_1s_ease-in-out]'
   ],
 }
 
