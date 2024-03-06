@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>
     <section class="py-16 bg-black font-poppins">
         <div class="justify-center flex-1 max-w-5xl px-4 py-4 mx-auto lg:py-10 md:px-7">
@@ -15,7 +18,7 @@
                     </div>
                     <p class="mb-16 text-base text-center font-semibold">
                         Prêt à concrétiser votre projet ? Contactez-nous pour un <span class="font-bold text-lg">devis
-                        gratuit</span> sans engagement. Nous sommes là pour donner vie à vos idées
+                            gratuit</span> sans engagement. Nous sommes là pour donner vie à vos idées
                         !
                     </p>
                 </div>
@@ -57,7 +60,8 @@
                             Téléphone
                         </h2>
                         <a href="tel:+32498800504"
-                            class="text-base font-medium text-gray-500 md:text-lg transition-all duration-300 hover:text-yellow">+32 498 80 05 04</a>
+                            class="text-base font-medium text-gray-500 md:text-lg transition-all duration-300 hover:text-yellow">+32
+                            498 80 05 04</a>
                     </div>
                 </div>
 
@@ -98,9 +102,9 @@
             <!-- ARROW DOWN -->
             <div class="arrowsDown">
                 <svg class="arrows mt-48">
-                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
                 </svg>
             </div>
 
@@ -120,50 +124,72 @@
 
 /** ARROW DOWN **/
 .arrows {
-  width: 60px;
-  height: 72px;
-  position: relative;
-  left: 50%;
-  margin-left: -30px;
+    width: 60px;
+    height: 72px;
+    position: relative;
+    left: 50%;
+    margin-left: -30px;
 }
 
 .arrows path {
-  stroke: #caa673;
-  fill: transparent;
-  stroke-width: 1px;  
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite; 
+    stroke: #caa673;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+    {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
 .arrows path.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s; 
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
 }
 
 .arrows path.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; 
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
 }
 
-.arrows path.a3 { 
-  animation-delay:0s;
-  -webkit-animation-delay:0s; 
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
 }
-
 </style>
