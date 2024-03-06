@@ -77,7 +77,7 @@ watch(active, () => {
                         leaveFrom="opacity-100 translate-x-0" leaveTo="opacity-0 translate-x-4">
                         <div class="text-yellow font-bold">{{ testimonial.name }}</div>
                         <div
-                            class="text-2xl mt-8 font-normal text-slate-900 before:content-['\201C'] after:content-['\201D']">
+                            class="text-2xl px-4 md:px-0 mt-8 font-normal text-slate-900 before:content-['\201C'] after:content-['\201D']">
                             {{ testimonial.quote }}</div>
                     </TransitionRoot>
                 </template>
