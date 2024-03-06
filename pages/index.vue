@@ -88,7 +88,7 @@ onMounted(async () => {
 
 
         <!-- SECTION: REALISATIONS -->
-        <div class="bg-black h-screen h-full py-6 sm:py-8 lg:py-48">
+        <div class="bg-black py-6 sm:py-8 lg:mt-72">
             <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
                 <div class="mb-4 flex items-center sm:mb-8 md:mb-12">
                     <div class="flex items-center" data-te-animation-init data-te-animation-start="onScroll"
@@ -175,6 +175,9 @@ onMounted(async () => {
                 </div>
             </div>
         </div>
+
+        <!-- SECTION: RATING -->
+        <Rating />
     </div>
 </template>
 
