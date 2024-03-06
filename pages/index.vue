@@ -253,4 +253,3 @@ onMounted(async () => {
     width: 90%;
 }
 </style>
-import type { NuxtLink } from '#build/components';

@@ -4,6 +4,7 @@ import { TransitionRoot } from '@headlessui/vue'
 import TestimonialImg01 from '../assets/img/testimonial/logo-man.png'
 import TestimonialImg02 from '../assets/img/testimonial/logo-women.png'
 import TestimonialImg03 from '../assets/img/testimonial/logo-man-2.png'
+import TestimonialImg04 from '../assets/img/testimonial/logo-man.png'
 
 onMounted(async () => {
     const { SmoothScroll, Animate, initTE } = await import('tw-elements')
@@ -26,8 +27,13 @@ const testimonials = [
     },
     {
         img: TestimonialImg03,
-        quote: "Incroyableee! Je suis très content des travaux réalisés ! Merci Flavio, je vous recommande cette menuiserie !",
+        quote: "Incroyableee! Je suis très content des travaux réalisés ! Merci Flavio !",
         name: 'Damien',
+    },
+    {
+        img: TestimonialImg04,
+        quote: "Je recommande cette entreprise. Très content de ma nouvelle cuisine!",
+        name: 'Famille Lacroix',
     }
 ]
 
