@@ -5,6 +5,11 @@ import TestimonialImg01 from '../assets/img/testimonial/logo-man.png'
 import TestimonialImg02 from '../assets/img/testimonial/logo-women.png'
 import TestimonialImg03 from '../assets/img/testimonial/logo-man-2.png'
 
+onMounted(async () => {
+    const { SmoothScroll, Animate, initTE } = await import('tw-elements')
+    initTE({ SmoothScroll, Animate }, { allowReinits: true })
+})
+
 const active = ref(0)
 
 
@@ -42,7 +47,9 @@ watch(active, () => {
 </script>
 
 <template>
-    <div class="section-review w-full max-w-3xl mx-auto text-center mt-48 lg:mt-64 mb-24">
+    <div class="section-review w-full max-w-3xl mx-auto text-center mt-48 lg:mt-64 mb-24" data-te-animation-init
+        data-te-animation-start="onScroll" data-te-animation-show-on-load="false"
+        data-te-animation="[fade-in-up_2s_ease-in-out]">
         <h5 class="text-center font-bold text-3xl md:text-5xl">Quelques avis de clients</h5>
         <!-- Testimonial image -->
         <div class="relative h-28">
