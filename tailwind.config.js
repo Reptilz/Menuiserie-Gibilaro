@@ -29,7 +29,7 @@ export default {
     'animate-[fade-in-up_1s_ease-in-out]',
     'animate-[fade-in-right_1s_ease-in-out]',
     'animate-[fade-in-left_1s_ease-in-out]',
-    'animate-[fade-in-up_2s_ease-in-out]',
+    'animate-[fade-in-down_2s_ease-in-out]',
     'animate-[slide-in-up_1s_ease-in-out]'
   ],
 }
