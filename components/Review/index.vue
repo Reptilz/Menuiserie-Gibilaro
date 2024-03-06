@@ -42,7 +42,7 @@ watch(active, () => {
 </script>
 
 <template>
-    <div class="w-full max-w-3xl mx-auto text-center mt-48 lg:mt-64 mb-24">
+    <div class="section-review w-full max-w-3xl mx-auto text-center mt-48 lg:mt-64 mb-24">
         <h5 class="text-center font-bold text-3xl md:text-5xl">Quelques avis de clients</h5>
         <!-- Testimonial image -->
         <div class="relative h-28">
@@ -99,3 +99,10 @@ watch(active, () => {
         </div>
     </div>
 </template>
+
+<style lang="scss" scoped>
+.section-review {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+</style>

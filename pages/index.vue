@@ -176,8 +176,8 @@ onMounted(async () => {
             </div>
         </div>
 
-        <!-- SECTION: RATING -->
-        <Rating />
+        <!-- SECTION: REVIEW -->
+        <Review />
     </div>
 </template>
 
