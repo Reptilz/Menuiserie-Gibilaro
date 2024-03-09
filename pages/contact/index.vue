@@ -107,10 +107,10 @@
                     <path class="a3" d="M0 40 L30 72 L60 40"></path>
                 </svg>
             </div>
-
-            <!-- GMAP -->
-            <GMap />
         </div>
+
+        <!-- GMAP -->
+        <GMap />
     </section>
 </template>
 

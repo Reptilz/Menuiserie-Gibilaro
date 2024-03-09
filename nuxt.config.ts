@@ -1,3 +1,4 @@
+import { Head } from './.nuxt/components.d';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { resolve } from "path"
 
@@ -5,7 +6,7 @@ export default defineNuxtConfig({
   alias: {
     '@': resolve(__dirname, '/'),
   },
-  css: ["~/assets/main.scss"],
+  css: ["~/assets/css/main.scss"],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -14,6 +15,6 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   plugins: [
-    { src: '~/plugins/scroll-behavior.client.ts', mode: 'client' }
+    { src: '~/plugins/scroll-behavior.client.ts', mode: 'client' },
   ],
 })

@@ -19,6 +19,7 @@ export default {
       'yellow': '#caa673',
       'darkYellow': '#9e825a',
       'blackLight': '#222222',
+      'grayInactive': 'rgba(165, 164, 164, 1)',
     },
   },
   plugins: [
