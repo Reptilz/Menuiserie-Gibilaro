@@ -17,7 +17,7 @@
 
             <TabPanels class="mt-2">
                 <TabPanel v-for="(categorie, idx) in Object.values(categories)" :key="idx">
-                    <h1>{{ getCapitalizedCategory(categorie[0].cat) }}</h1>
+                    <h1>{{ categorie[0].cat }}</h1>
                     <div class="container mx-auto py-2 lg:pt-12 bg-black">
                         <div class="-m-1 flex flex-wrap md:-m-2">
                             <div v-for="(cat, index) in categorie" :key="index" class="flex w-1/3 flex-wrap">
@@ -46,17 +46,20 @@ import MeublesImg01 from '../assets/img/realisations/meubles/meubles-01.jpg'
 //Portes
 import PortesImg01 from '../assets/img/realisations/portes/portes-01.jpg'
 
+//Terrasses
+import TerrassesImg01 from '../assets/img/realisations/terrasses/terrasses-01.jpg'
+
 const categories = ref({
     Escaliers: [
         {
             id: 1,
-            cat: 'escaliers',
+            cat: 'Escaliers',
             title: 'Escaliers01',
             img: EscaliersImg01,
         },
         {
             id: 2,
-            cat: 'escaliers',
+            cat: 'Escaliers',
             title: "escaliers-02",
             img: EscaliersImg01,
         },
@@ -64,13 +67,13 @@ const categories = ref({
     Meubles: [
         {
             id: 1,
-            cat: 'meubles',
+            cat: 'Meubles sur mesure',
             title: 'meubles-01',
             img: MeublesImg01,
         },
         {
             id: 2,
-            cat: 'meubles',
+            cat: 'Meubles sur mesure',
             title: 'meubles-02',
             img: MeublesImg01,
         },
@@ -78,20 +81,30 @@ const categories = ref({
     Portes: [
         {
             id: 1,
-            cat: 'portes',
+            cat: 'Portes sur mesure',
             title: 'meubles-01',
             img: PortesImg01,
         },
         {
             id: 2,
-            cat: 'portes',
+            cat: 'Portes',
             title: 'meubles-02',
             img: PortesImg01,
         },
     ],
+    Terrasses: [
+        {
+            id: 1,
+            cat: 'Terrasses',
+            title: 'terrasses-01',
+            img: TerrassesImg01,
+        },
+        {
+            id: 2,
+            cat: 'Portes',
+            title: 'terrasses-02',
+            img: TerrassesImg01,
+        },
+    ],
 })
-
-const getCapitalizedCategory = (category) => {
-    return category.charAt(0).toUpperCase() + category.slice(1);
-};
 </script>
