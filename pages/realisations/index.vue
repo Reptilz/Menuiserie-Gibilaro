@@ -23,13 +23,11 @@
                             <div v-for="(cat, index) in categorie" :key="index" class="flex w-1/3 flex-wrap">
                                 <div class="w-full p-1 md:p-2">
                                     <img :alt="`Menuiserie Gibilaro - ${cat.title}`"
-                                        class="block h-full w-full rounded-lg object-cover object-center"
-                                        :src="`/_nuxt/assets/img/realisations/${cat.cat}/${cat.title}.jpg`" />
+                                        class="block rounded-lg object-cover object-center" :src="cat.img" />
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </TabPanel>
             </TabPanels>
         </TabGroup>
@@ -39,19 +37,28 @@
 <script setup>
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
 
+//Escaliers
+import EscaliersImg01 from '../assets/img/realisations/escaliers/escaliers-01.jpg'
+
+//Meubles
+import MeublesImg01 from '../assets/img/realisations/meubles/meubles-01.jpg'
+
+//Portes
+import PortesImg01 from '../assets/img/realisations/portes/portes-01.jpg'
+
 const categories = ref({
     Escaliers: [
         {
             id: 1,
             cat: 'escaliers',
-            title: 'escaliers-01',
-            img: '',
+            title: 'Escaliers01',
+            img: EscaliersImg01,
         },
         {
             id: 2,
             cat: 'escaliers',
             title: "escaliers-02",
-            img: '',
+            img: EscaliersImg01,
         },
     ],
     Meubles: [
@@ -59,13 +66,27 @@ const categories = ref({
             id: 1,
             cat: 'meubles',
             title: 'meubles-01',
-            img: '',
+            img: MeublesImg01,
         },
         {
             id: 2,
             cat: 'meubles',
             title: 'meubles-02',
-            img: '',
+            img: MeublesImg01,
+        },
+    ],
+    Portes: [
+        {
+            id: 1,
+            cat: 'portes',
+            title: 'meubles-01',
+            img: PortesImg01,
+        },
+        {
+            id: 2,
+            cat: 'portes',
+            title: 'meubles-02',
+            img: PortesImg01,
         },
     ],
 })
