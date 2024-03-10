@@ -20,7 +20,7 @@
 
 
     <!-- GALLERY -->
-    <div class="w-full mx-auto container bg-black px-2 py-16 sm:px-0">
+    <div class="w-full mx-auto container bg-black px-2 py-16 sm:px-0 mb-40">
         <TabGroup>
             <TabList
                 class="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-12 bg-black p-1 text-grayInactive md:mx-12">
@@ -44,7 +44,7 @@
                             <div
                                 class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
                                 <div v-for="(cat, index) in categorie" :key="index"
-                                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                                    class="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-lg md:h-80">
                                     <img :src="cat.img" loading="lazy" :alt="`Menuiserie Gibilaro - ${cat.title}`"
                                         class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                                 </div>
@@ -135,20 +135,6 @@ const categories = ref({
         },
     ],
     Terrasses: [
-        {
-            id: 1,
-            cat: 'Terrasses',
-            title: 'terrasses-01',
-            img: TerrassesImg01,
-        },
-        {
-            id: 2,
-            cat: 'Portes',
-            title: 'terrasses-02',
-            img: TerrassesImg01,
-        },
-    ],
-    aaa: [
         {
             id: 1,
             cat: 'Terrasses',
