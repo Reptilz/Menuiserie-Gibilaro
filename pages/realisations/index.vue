@@ -29,8 +29,8 @@
                     'rounded-lg py-1 text-sm font-semibold leading-2',
                     'ring-yellow ring-offset-2 ring-offset-yellow focus:outline-none',
                     selected
-                        ? 'bg-yellow text-black'
-                        : '',
+                        ? 'bg-yellow text-black hover:text-black transition duration-200'
+                        : 'hover:text-yellow transition duration-200',
                 ]">
                         {{ category }}
                     </button>
