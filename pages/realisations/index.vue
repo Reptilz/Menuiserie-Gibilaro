@@ -1,10 +1,32 @@
 <template>
+    <section class="bg-dark relative mt-12 md:mt-20 md:mb-20 overflow-hidden">
+        <div class="square-opacity bg-yellow"></div>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
+                Nos réalisations
+            </h1>
+            <p class="mb-8 text-lg font-normal lg:text-xl sm:px-16 lg:px-48">
+                Explorez les réalisations remarquables de notre menuiserie à Liège, où l'artisanat authentique se marie
+                harmonieusement avec un style contemporain. Nous façonnons avec passion des meubles sur mesure, des
+                escaliers élégants, des portes et fenêtres personnalisées, ainsi que d'autres pièces de menuiserie
+                intérieure et extérieure. Chaque création témoigne de notre engagement envers la qualité et le souci du
+                détail, apportant une touche d'élégance à votre espace de vie. Parcourez notre galerie de réalisations
+                pour découvrir notre expertise et laissez-nous transformer vos idées en œuvres d'art fonctionnelles.
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <!-- GALLERY -->
     <div class="w-full mx-auto container bg-black px-2 py-16 sm:px-0">
         <TabGroup>
-            <TabList class="flex space-x-1 rounded-xl bg-black p-1 text-grayInactive">
+            <TabList
+                class="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-12 bg-black p-1 text-grayInactive md:mx-12">
                 <Tab v-for="category in Object.keys(categories)" as="template" :key="category" v-slot="{ selected }">
                     <button :class="[
-                    'w-52 rounded-lg py-1 text-xs font-normal leading-5',
+                    'rounded-lg py-1 text-sm font-semibold leading-2',
                     'ring-yellow ring-offset-2 ring-offset-yellow focus:outline-none',
                     selected
                         ? 'bg-yellow text-black'
@@ -17,13 +39,14 @@
 
             <TabPanels class="mt-2">
                 <TabPanel v-for="(categorie, idx) in Object.values(categories)" :key="idx">
-                    <h1>{{ categorie[0].cat }}</h1>
-                    <div class="container mx-auto py-2 lg:pt-12 bg-black">
-                        <div class="-m-1 flex flex-wrap md:-m-2">
-                            <div v-for="(cat, index) in categorie" :key="index" class="flex w-1/3 flex-wrap">
-                                <div class="w-full p-1 md:p-2">
-                                    <img :alt="`Menuiserie Gibilaro - ${cat.title}`"
-                                        class="block rounded-lg object-cover object-center" :src="cat.img" />
+                    <div class="img-gallery">
+                        <div class="mx-auto max-w-screen-2xl mx-4 md:mx-12">
+                            <div
+                                class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+                                <div v-for="(cat, index) in categorie" :key="index"
+                                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                                    <img :src="cat.img" loading="lazy" :alt="`Menuiserie Gibilaro - ${cat.title}`"
+                                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                                 </div>
                             </div>
                         </div>
@@ -42,6 +65,7 @@ import EscaliersImg01 from '../assets/img/realisations/escaliers/escaliers-01.jp
 
 //Meubles
 import MeublesImg01 from '../assets/img/realisations/meubles/meubles-01.jpg'
+import MeublesImg02 from '../assets/img/realisations/meubles/meubles-02.jpg'
 
 //Portes
 import PortesImg01 from '../assets/img/realisations/portes/portes-01.jpg'
@@ -63,6 +87,24 @@ const categories = ref({
             title: "escaliers-02",
             img: EscaliersImg01,
         },
+        {
+            id: 3,
+            cat: 'Escaliers',
+            title: "escaliers-03",
+            img: EscaliersImg01,
+        },
+        {
+            id: 4,
+            cat: 'Escaliers',
+            title: "escaliers-04",
+            img: EscaliersImg01,
+        },
+        {
+            id: 5,
+            cat: 'Escaliers',
+            title: "escaliers-05",
+            img: EscaliersImg01,
+        },
     ],
     Meubles: [
         {
@@ -75,7 +117,7 @@ const categories = ref({
             id: 2,
             cat: 'Meubles sur mesure',
             title: 'meubles-02',
-            img: MeublesImg01,
+            img: MeublesImg02,
         },
     ],
     Portes: [
@@ -106,5 +148,32 @@ const categories = ref({
             img: TerrassesImg01,
         },
     ],
+    aaa: [
+        {
+            id: 1,
+            cat: 'Terrasses',
+            title: 'terrasses-01',
+            img: TerrassesImg01,
+        },
+        {
+            id: 2,
+            cat: 'Portes',
+            title: 'terrasses-02',
+            img: TerrassesImg01,
+        },
+    ],
 })
 </script>
+
+<style lang="scss" scoped>
+.square-opacity {
+    position: absolute;
+    opacity: .1;
+    top: 20%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+</style>

@@ -52,7 +52,8 @@ onMounted(async () => {
                                     class="mt-2 mb-8 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
                                     Menuiserie <span class="text-yellow">Gibilaro</span>
                                 </h1>
-                                <p class="pb-16">Artisan menuisier passionné, nous façonnons des créations sur mesure
+                                <p class="pb-16">Artisan menuisier Liégeois passionné, nous façonnons des créations sur
+                                    mesure
                                     pour
                                     embellir votre
                                     espace de vie. Expertise dans la conception et l'installation de meubles, portes,
