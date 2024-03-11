@@ -40,7 +40,7 @@
             <TabPanels class="mt-2">
                 <TabPanel v-for="(categorie, idx) in Object.values(categories)" :key="idx">
                     <div class="img-gallery">
-                        <div class="mx-auto max-w-screen-2xl mx-4 md:mx-12">
+                        <div class="mx-auto max-w-screen-2xl md:mx-12">
                             <div
                                 class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
                                 <div v-for="(cat, index) in categorie" :key="index"
@@ -67,7 +67,7 @@
                                         </div>
                                         <div class="flex items-center justify-center">
                                             <img :src="selectedImage" alt="Image"
-                                                class="w-fit h-fit max-w-xs md:max-w-xl object-cover" />
+                                                class="w-96 h-96 md:w-fit md:h-fit max-w-xs md:max-w-xl object-cover" />
                                         </div>
                                     </Dialog>
                                 </Transition>
