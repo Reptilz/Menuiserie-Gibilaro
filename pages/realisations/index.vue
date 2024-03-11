@@ -45,29 +45,30 @@
                                 class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
                                 <div v-for="(cat, index) in categorie" :key="index"
                                     class="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-lg md:h-80">
-                                    <img @click="openModal(cat.img)" :src="cat.img" loading="lazy"
+                                    <img @click="openModal(cat.img, cat.title)" :src="cat.img" loading="lazy"
                                         :alt="`Menuiserie Gibilaro - ${cat.title}`"
-                                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                                        class="absolute cursor-pointer inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                                 </div>
 
                                 <!-- MODAL IMAGE -->
-                                <div class="fixed inset-0 bg-black bg-opacity-95 transition-opacity"
+                                <div class="fixed inset-0 bg-black bg-opacity-[.97] transition-opacity"
                                     :class="{ 'hidden': !isOpen }" @click="closeModal"></div>
                                 <Transition>
                                     <Dialog
                                         class="fixed z-10 inset-0 overflow-y-auto bg-black bg-opacity-0 transition-opacity"
                                         :open="isOpen" @close="closeModal">
                                         <!-- Add a close button -->
-                                        <div class="flex items-center justify-end text-white text-opacity-70 p-8">
+                                        <div
+                                            class="flex items-center justify-end text-white text-opacity-70 p-8 transition duration-300 hover:text-opacity-90">
                                             <span
-                                                class="absolute top-[5px] right-0 md:right-[5px] text-4xl cursor-pointer"
+                                                class="absolute text-4xl cursor-pointer top-[5px] right-0 md:right-[5px]"
                                                 @click="closeModal">
                                                 <i class="fa-solid fa-xmark"></i>
                                             </span>
                                         </div>
                                         <div class="flex items-center justify-center">
-                                            <img :src="selectedImage" alt="Image"
-                                                class="w-96 h-96 md:w-fit md:h-fit max-w-xs md:max-w-xl object-cover" />
+                                            <img :src="selectedImage" :alt="`Menuiserie Gibilaro - ${alt}`"
+                                                class="w-96 h-96 md:w-full md:h-full max-w-xs md:max-w-xl object-cover" />
                                         </div>
                                     </Dialog>
                                 </Transition>
@@ -98,13 +99,15 @@ import PortesImg01 from '../assets/img/realisations/portes/portes-01.jpg'
 import TerrassesImg01 from '../assets/img/realisations/terrasses/terrasses-01.jpg'
 
 
-
+//Modal gallery
 const isOpen = ref(false)
 const selectedImage = ref(null)
+const selectedAlt = ref(null)
 
-function openModal(img) {
+function openModal(img, alt) {
     isOpen.value = true
     selectedImage.value = img
+    selectedAlt.value = alt
 }
 
 function closeModal() {

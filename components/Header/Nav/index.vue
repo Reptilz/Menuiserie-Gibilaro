@@ -33,9 +33,9 @@
             <NuxtLink to="/" @click="toggleMobileMenu"
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
               :class="[
-                $route.path === '/'
-                  ? 'bg-yellow text-black' : ''
-              ]">
+          $route.path === '/'
+            ? 'bg-yellow text-black' : ''
+        ]">
               Accueil
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
@@ -46,17 +46,25 @@
                 class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
                 :class="[$route.path === '/realisations' ? 'bg-yellow text-black' : '']" @click="toggleSubMenuMobile">
                 Nos réalisations
-                <i :class="{'fa-solid fa-chevron-right': !isSubMenuMobileVisible, 'fa-solid fa-chevron-down': isSubMenuMobileVisible}"></i>
+                <i
+                  :class="{ 'fa-solid fa-chevron-right': !isSubMenuMobileVisible, 'fa-solid fa-chevron-down': isSubMenuMobileVisible }"></i>
               </NuxtLink>
               <div class="subMenuMobile" v-if="isSubMenuMobileVisible">
                 <NuxtLink @click="toggleMobileMenu" to="/realisations">
-                  <div class="px-8 py-3 font-semibold bg-blackLight bg-opacity-90 hover:bg-yellow hover:text-black">Escaliers</div>
+                  <div class="px-8 py-3 font-semibold bg-blackLight bg-opacity-90 hover:bg-yellow hover:text-black">
+                    Escaliers</div>
                 </NuxtLink>
                 <NuxtLink @click="toggleMobileMenu" to="/realisations">
-                  <div class="px-8 py-3 font-semibold bg-blackLight bg-opacity-90 hover:bg-yellow hover:text-black">Meubles sur mesure</div>
+                  <div class="px-8 py-3 font-semibold bg-blackLight bg-opacity-90 hover:bg-yellow hover:text-black">
+                    Meubles sur mesure</div>
                 </NuxtLink>
                 <NuxtLink @click="toggleMobileMenu" to="/realisations">
-                  <div class="px-8 py-3 font-semibold bg-blackLight bg-opacity-90 hover:bg-yellow hover:text-black">Portes</div>
+                  <div class="px-8 py-3 font-semibold bg-blackLight bg-opacity-90 hover:bg-yellow hover:text-black">
+                    Portes</div>
+                </NuxtLink>
+                <NuxtLink @click="toggleMobileMenu" to="/realisations">
+                  <div class="px-8 py-3 font-semibold bg-blackLight bg-opacity-90 hover:bg-yellow hover:text-black">
+                    Terrasses</div>
                 </NuxtLink>
               </div>
             </div>
@@ -65,27 +73,27 @@
             <NuxtLink to="/a-propos" @click="toggleMobileMenu"
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
               :class="[
-                $route.path === '/a-propos'
-                  ? 'bg-yellow text-black' : ''
-              ]">
+          $route.path === '/a-propos'
+            ? 'bg-yellow text-black' : ''
+        ]">
               À propos
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
             <NuxtLink to="/contact" @click="toggleMobileMenu"
               class="text-white bg-blackLight bg-opacity-30 text-xl mt-3 p-5 hover:bg-yellow hover:text-black hover:font-semibold flex justify-between items-center"
               :class="[
-                $route.path === '/contact'
-                  ? 'bg-yellow text-black' : ''
-              ]">
+          $route.path === '/contact'
+            ? 'bg-yellow text-black' : ''
+        ]">
               Contact
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>
             <NuxtLink to="/contact" @click="toggleMobileMenu"
               class="text-yellow bg-black border text-xl font-semibold mt-3 p-5 hover:bg-yellow hover:text-black flex justify-between items-center"
               :class="[
-                $route.path === '/devis'
-                  ? 'text-black' : ''
-              ]">
+          $route.path === '/devis'
+            ? 'text-black' : ''
+        ]">
               Devis gratuit
               <i class="fa-solid fa-chevron-right"></i>
             </NuxtLink>

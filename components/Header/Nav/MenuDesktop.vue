@@ -32,25 +32,27 @@
           class="block mb-4 pb-2 pl-2 border-b transition-all duration-300 hover:text-yellow">
           <i class="fa-solid fa-door-closed pr-1"></i> Portes
         </NuxtLink>
+        <NuxtLink to="/realisations#terrasses"
+          class="block mb-4 pb-2 pl-2 border-b transition-all duration-300 hover:text-yellow">
+          <i class="fa-solid fa-plant-wilt pr-1"></i> Terrasses
+        </NuxtLink>
       </div>
     </div>
 
 
-    <NuxtLink to="/a-propos" class="text-white hover:text-yellow opacity-90 transition-all duration-300 hover:opacity-100"
+    <NuxtLink to="/a-propos"
+      class="text-white hover:text-yellow opacity-90 transition-all duration-300 hover:opacity-100"
       :class="{ 'text-yellow': $route.path === '/a-propos' }">
       À propos
     </NuxtLink>
-    <NuxtLink to="/contact" class="text-white hover:text-yellow opacity-90 transition-all duration-300 hover:opacity-100"
-      :class="{ 'text-yellow': $route.path === '/contact' }">
-      Contact
-    </NuxtLink>
+
     <NuxtLink to="/contact" class="nav-devis text-black" :class="[
       $route.path === '/devis'
         ? 'bg-black border text-yellow'
         : 'bg-yellow',
       'p-2 font-semibold border border-yellow hover:bg-black transition-all duration-300 hover:text-yellow hover:border',
     ]">
-      Devis gratuit
+      Contact — Devis gratuit
     </NuxtLink>
   </div>
 </template>
@@ -126,4 +128,5 @@ onUnmounted(() => {
   .logo-nav-fixed {
     left: 600px;
   }
-}</style>
+}
+</style>
