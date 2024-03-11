@@ -45,9 +45,32 @@
                                 class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
                                 <div v-for="(cat, index) in categorie" :key="index"
                                     class="group relative flex h-48 items-end overflow-hidden rounded-lg shadow-lg md:h-80">
-                                    <img :src="cat.img" loading="lazy" :alt="`Menuiserie Gibilaro - ${cat.title}`"
+                                    <img @click="openModal(cat.img)" :src="cat.img" loading="lazy"
+                                        :alt="`Menuiserie Gibilaro - ${cat.title}`"
                                         class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                                 </div>
+
+                                <!-- MODAL IMAGE -->
+                                <div class="fixed inset-0 bg-black bg-opacity-95 transition-opacity"
+                                    :class="{ 'hidden': !isOpen }" @click="closeModal"></div>
+                                <Transition>
+                                    <Dialog
+                                        class="fixed z-10 inset-0 overflow-y-auto bg-black bg-opacity-0 transition-opacity"
+                                        :open="isOpen" @close="closeModal">
+                                        <!-- Add a close button -->
+                                        <div class="flex items-center justify-end text-white text-opacity-70 p-8">
+                                            <span
+                                                class="absolute top-[5px] right-10 md:right-[5px] text-4xl cursor-pointer"
+                                                @click="closeModal">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <img :src="selectedImage" alt="Image"
+                                                class="w-fit h-fit max-w-xs md:max-w-xl object-cover" />
+                                        </div>
+                                    </Dialog>
+                                </Transition>
                             </div>
                         </div>
                     </div>
@@ -55,6 +78,7 @@
             </TabPanels>
         </TabGroup>
     </div>
+
 </template>
 
 <script setup>
@@ -72,6 +96,20 @@ import PortesImg01 from '../assets/img/realisations/portes/portes-01.jpg'
 
 //Terrasses
 import TerrassesImg01 from '../assets/img/realisations/terrasses/terrasses-01.jpg'
+
+
+
+const isOpen = ref(false)
+const selectedImage = ref(null)
+
+function openModal(img) {
+    isOpen.value = true
+    selectedImage.value = img
+}
+
+function closeModal() {
+    isOpen.value = false
+}
 
 const categories = ref({
     Escaliers: [
