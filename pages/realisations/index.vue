@@ -60,7 +60,7 @@
                                         <!-- Add a close button -->
                                         <div class="flex items-center justify-end text-white text-opacity-70 p-8">
                                             <span
-                                                class="absolute top-[5px] right-10 md:right-[5px] text-4xl cursor-pointer"
+                                                class="absolute top-[5px] right-0 md:right-[5px] text-4xl cursor-pointer"
                                                 @click="closeModal">
                                                 <i class="fa-solid fa-xmark"></i>
                                             </span>
