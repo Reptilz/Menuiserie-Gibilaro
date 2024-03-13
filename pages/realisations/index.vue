@@ -68,7 +68,7 @@
                                         </div>
                                         <div class="flex items-center justify-center">
                                             <img :src="selectedImage" :alt="`Menuiserie Gibilaro - ${alt}`"
-                                                class="w-96 h-96 md:w-full md:h-full max-w-xs md:max-w-xl object-cover" />
+                                                class="w-96 h-96 md:w-full md:h-full max-w-xs md:max-w-md xl:max-w-xl object-cover" />
                                         </div>
                                     </Dialog>
                                 </Transition>
