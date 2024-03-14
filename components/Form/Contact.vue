@@ -21,6 +21,8 @@ const { apiMailerUrlDev, apiMailerUrlProd } = useRuntimeConfig().public;
 const isProdEnv = process.env.NODE_ENV === "production";
 const apiUrl = isProdEnv ? apiMailerUrlDev : apiMailerUrlProd;
 
+console.log(apiUrl);
+
 
 async function submit(form) {
   await $fetch(`${apiUrl}/contact`, {
@@ -68,7 +70,7 @@ async function submit(form) {
         <div class="w-full px-2 mb-4 lg:mb-0 lg:w-1/2">
           <input v-model="form.subject"
             class="w-full px-3 py-2 text-white bg-black font-semibold leading-loose border rounded-md focus:ring focus:ring-yellow"
-            type="text" placeholder="Titre du sujet" required />
+            type="text" placeholder="Titre du sujet" />
         </div>
         <div class="w-full px-2 lg:w-1/2">
           <input v-model="form.phone"

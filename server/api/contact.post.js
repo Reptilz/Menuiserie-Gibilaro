@@ -74,9 +74,9 @@ async function isValid(body) {
     });
   if (validator.isEmpty(body.name || ""))
     errors.push({ field: "name", error: "Field is required." });
-  if (validator.isEmpty(body.phone || ""))
+  if (validator.isEmpty(body.phone || " "))
     errors.push({ field: "phone", error: "Field is required." });
-  if (validator.isEmpty(body.subject || ""))
+  if (validator.isEmpty(body.subject || " "))
     errors.push({ field: "subject", error: "Field is required." });
   if (validator.isEmpty(body.message || ""))
     errors.push({ field: "message", error: "Field is required." });
