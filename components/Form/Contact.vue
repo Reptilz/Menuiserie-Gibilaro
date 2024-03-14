@@ -18,7 +18,8 @@ const errors = ref(false);
 const succsess = ref(false);
 
 const config = useRuntimeConfig();
-const apiMailer = config.public.apiMailerUrl; console.log(apiMailer);
+const apiMailer = config.public.apiMailerUrl;
+console.log(apiMailer);
 
 async function submit(form) {
   await $fetch(`${apiMailer}/contact`, {

@@ -24,7 +24,9 @@ export default defineNuxtConfig({
     MAILPASSWORD: process.env.MAILPASSWORD,
     CONTACTMAIL: process.env.CONTACTMAIL,
     public : {
-      apiMailerUrl: process.env.API_BASE_URL_LOCALHOST
+      apiMailerUrl: process.env.NODE_ENV === 'prod' 
+      ? process.env.API_BASE_URL_PROD 
+      : process.env.API_BASE_URL_LOCALHOST
     }
   }
 })
