@@ -31,14 +31,6 @@ onMounted(async () => {
                   Rue de la Station 12, <br /> 4610 Beyne-Heusay <br /> Liège, Belgique
                 </p>
               </div>
-              <!-- <div class="col-span-1 border-r border-yellow px-6 py-4">
-                <h3 class="text-lg font-medium text-yellow">
-                  Heures d'ouverture
-                </h3>
-                <p class="mt-1 text-gray-600">Lundi - Vendredi: 8h30 - 18h30</p>
-                <p class="mt-1 text-gray-600">Samedi : 10h00 - 17h30</p>
-                <p class="mt-1 text-gray-600">Dimanche : Fermé</p>
-              </div> -->
               <div class="col-span-2 border-t md:border-l border-yellow px-6 lg:px-8 py-4">
                 <h3 class="text-lg font-medium text-yellow">Contact</h3>
                 <p class="mt-1 text-gray-600 transition-all duration-300 hover:text-yellow">

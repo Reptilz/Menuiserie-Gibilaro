@@ -17,4 +17,14 @@ export default defineNuxtConfig({
   plugins: [
     { src: '~/plugins/scroll-behavior.client.ts', mode: 'client' },
   ],
+  runtimeConfig: {
+    MAILHOST: process.env.MAILHOST,
+    MAILPORT: process.env.MAILPORT,
+    MAILUSER: process.env.MAILUSER,
+    MAILPASSWORD: process.env.MAILPASSWORD,
+    CONTACTMAIL: process.env.CONTACTMAIL,
+    public : {
+      apiMailerUrl: process.env.API_BASE_URL_LOCALHOST
+    }
+  }
 })
