@@ -1,4 +1,5 @@
 import { Head } from './.nuxt/components.d';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { resolve } from "path"
 
@@ -24,9 +25,8 @@ export default defineNuxtConfig({
     MAILPASSWORD: process.env.MAILPASSWORD,
     CONTACTMAIL: process.env.CONTACTMAIL,
     public : {
-      apiMailerUrl: process.env.NODE_ENV === 'prod' 
-      ? process.env.API_BASE_URL_PROD 
-      : process.env.API_BASE_URL_LOCALHOST
+      apiMailerUrlDev: process.env.API_BASE_URL_PROD,
+      apiMailerUrlProd : process.env.API_BASE_URL_LOCALHOST
     }
   }
 })

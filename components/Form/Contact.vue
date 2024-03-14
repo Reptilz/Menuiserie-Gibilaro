@@ -1,5 +1,4 @@
 <script setup>
-import { useRuntimeConfig } from '#app';
 
 onMounted(async () => {
   const { SmoothScroll, Animate, initTE } = await import('tw-elements')
@@ -17,11 +16,14 @@ const form = ref({
 const errors = ref(false);
 const succsess = ref(false);
 
-const config = useRuntimeConfig();
-const apiMailer = config.public.apiMailerUrl;
+//Define route API for dev or prod 
+const { apiMailerUrlDev, apiMailerUrlProd } = useRuntimeConfig().public;
+const isProdEnv = process.env.NODE_ENV === "production";
+const apiUrl = isProdEnv ? apiMailerUrlDev : apiMailerUrlProd;
+
 
 async function submit(form) {
-  await $fetch(`${apiMailer}/contact`, {
+  await $fetch(`${apiUrl}/contact`, {
     method: 'POST',
     body: form,
   }).then(() => {
@@ -43,7 +45,6 @@ async function submit(form) {
 </script>
 
 <template>
-  <h1 class="text-white">{{ apiMailer }}</h1>
   <div class="px-8 py-8 bg-black border-2 border-yellow rounded-md shadow-md dark:border-gray-800 dark:bg-gray-800">
     <form @submit.prevent="submit(form)">
       <div class="mb-6">
