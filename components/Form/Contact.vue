@@ -19,7 +19,6 @@ const succsess = ref(false);
 
 const config = useRuntimeConfig();
 const apiMailer = config.public.apiMailerUrl;
-console.log(apiMailer);
 
 async function submit(form) {
   await $fetch(`${apiMailer}/contact`, {
@@ -44,6 +43,7 @@ async function submit(form) {
 </script>
 
 <template>
+  <h1 class="text-white">{{ apiMailer }}</h1>
   <div class="px-8 py-8 bg-black border-2 border-yellow rounded-md shadow-md dark:border-gray-800 dark:bg-gray-800">
     <form @submit.prevent="submit(form)">
       <div class="mb-6">
